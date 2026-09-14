@@ -94,7 +94,7 @@
   },
   "privacy": {
     "title": "Privatsphäre von Anfang an",
-    "text": "Aufnahme und Kodierung erfolgen vollständig in Ihrem Browser. sicorder lädt keine Aufnahmen hoch, sammelt keine Analykedaten und benötigt kein Konto. Videos werden direkt in Ihren Ordner \"Downloads\" gespeichert."
+    "text": "Aufnahme und Kodierung erfolgen vollständig in Ihrem Browser, und Videos werden direkt in Ihren Download-Ordner gespeichert. sicorder lädt niemals Ihre Aufnahmen hoch und sendet niemals Seiteninhalte, URLs oder Dateinamen. Es sendet anonyme Nutzungsstatistiken, wie z. B. wie viele Aufnahmen gestartet und gespeichert wurden, damit wir es verbessern können. Kein Konto erforderlich."
   },
   "goodToKnow": {
     "title": "Gut zu wissen",

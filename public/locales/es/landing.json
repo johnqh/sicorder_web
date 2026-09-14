@@ -94,7 +94,7 @@
   },
   "privacy": {
     "title": "Privacidad desde el diseño",
-    "text": "La grabación y codificación ocurren completamente en tu navegador. sicorder no sube tus grabaciones, no recopila análisis y no necesita una cuenta. Los videos van directamente a tu carpeta de Descargas."
+    "text": "La grabación y codificación se realizan completamente en tu navegador, y los videos se guardan directamente en tu carpeta de Descargas. sicorder nunca sube tus grabaciones ni envía el contenido de la página, las URL ni los nombres de archivo. Envía estadísticas de uso anónimas, como cuántas grabaciones se inician y guardan, para poder mejorar el servicio. No se necesita ninguna cuenta."
   },
   "goodToKnow": {
     "title": "Conviene saber",

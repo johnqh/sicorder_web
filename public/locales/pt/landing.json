@@ -94,7 +94,7 @@
   },
   "privacy": {
     "title": "Privacidade desde a concepção",
-    "text": "A gravação e a codificação ocorrem inteiramente no seu navegador. O sicorder não envia suas gravações, não coleta análises e não precisa de uma conta. Os vídeos vão diretamente para a pasta Downloads."
+    "text": "A gravação e a codificação ocorrem inteiramente no seu navegador, e os vídeos vão diretamente para a pasta Downloads. O sicorder nunca envia suas gravações nem envia o conteúdo da página, URLs ou nomes de arquivos. Ele envia estatísticas de uso anônimas, como quantas gravações são iniciadas e salvas, para que possamos melhorá-lo. Não é necessário criar uma conta."
   },
   "goodToKnow": {
     "title": "Bom saber",

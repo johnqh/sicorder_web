@@ -94,7 +94,7 @@
   },
   "privacy": {
     "title": "Privacy by design",
-    "text": "Registrazione e codifica avvengono interamente nel tuo browser. sicorder non carica le tue registrazioni, non raccoglie dati analitici e non richiede un account. I video vengono salvati direttamente nella cartella Download."
+    "text": "La registrazione e la codifica avvengono interamente nel tuo browser, e i video vengono salvati direttamente nella cartella Download. sicorder non carica mai le tue registrazioni né invia contenuti della pagina, URL o nomi di file. Invia statistiche di utilizzo anonime, come il numero di registrazioni avviate e salvate, per poterla migliorare. Non è necessario un account."
   },
   "goodToKnow": {
     "title": "Buono a sapersi",

@@ -94,7 +94,7 @@
   },
   "privacy": {
     "title": "Quyền riêng tư ngay từ thiết kế",
-    "text": "Quá trình ghi âm và mã hóa diễn ra hoàn toàn trong trình duyệt của bạn. sicorder không tải lên bản ghi của bạn, không thu thập dữ liệu phân tích và cũng không yêu cầu tài khoản. Video được lưu trực tiếp vào thư mục Tải xuống của bạn."
+    "text": "Quá trình ghi hình và mã hóa diễn ra hoàn toàn trong trình duyệt của bạn, và video được lưu trực tiếp vào thư mục Tải xuống của bạn. sicorder không bao giờ tải lên bản ghi của bạn và không bao giờ gửi nội dung trang, URL hoặc tên tệp. Nó gửi số liệu thống kê sử dụng ẩn danh, chẳng hạn như số lượng bản ghi được bắt đầu và lưu, để chúng tôi có thể cải thiện nó. Không cần tài khoản."
   },
   "goodToKnow": {
     "title": "Cần biết",

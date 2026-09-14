@@ -94,7 +94,7 @@
   },
   "privacy": {
     "title": "Private by design",
-    "text": "Recording and encoding happen entirely in your browser. sicorder doesn't upload your recordings, doesn't collect analytics and doesn't need an account. Videos go straight to your Downloads folder."
+    "text": "Recording and encoding happen entirely in your browser, and videos go straight to your Downloads folder. sicorder never uploads your recordings and never sends page content, URLs or file names. It sends anonymous usage statistics, such as how many recordings are started and saved, so we can improve it. No account needed."
   },
   "goodToKnow": {
     "title": "Good to know",

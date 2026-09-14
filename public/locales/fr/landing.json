@@ -94,7 +94,7 @@
   },
   "privacy": {
     "title": "Protection de la vie privée dès la conception",
-    "text": "L'enregistrement et l'encodage se font entièrement dans votre navigateur. sicorder ne télécharge pas vos enregistrements, ne collecte pas d'analyses et ne nécessite pas de compte. Les vidéos sont directement enregistrées dans votre dossier Téléchargements."
+    "text": "L'enregistrement et l'encodage se font entièrement dans votre navigateur, et les vidéos sont directement enregistrées dans votre dossier Téléchargements. sicorder ne téléverse jamais vos enregistrements et n'envoie jamais le contenu de la page, les URL ou les noms de fichiers. Il transmet des statistiques d'utilisation anonymes, telles que le nombre d'enregistrements démarrés et enregistrés, afin de l'améliorer. Aucun compte n'est nécessaire."
   },
   "goodToKnow": {
     "title": "Bon à savoir",

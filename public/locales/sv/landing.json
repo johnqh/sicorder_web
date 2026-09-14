@@ -94,7 +94,7 @@
   },
   "privacy": {
     "title": "Integritet från design",
-    "text": "Inspelning och kodning sker helt i din webbläsare. sicorder laddar inte upp dina inspelningar, samlar inte in analysdata och kräver inget konto. Videor sparas direkt i din mapp för nedladdningar."
+    "text": "Inspelning och kodning sker helt i din webbläsare, och videorna sparas direkt i din mapp för nedladdningar. sicorder laddar aldrig upp dina inspelningar och skickar aldrig sidinnehåll, URL:er eller filnamn. Den skickar anonyma användningsstatistik, såsom hur många inspelningar som startas och sparas, så att vi kan förbättra den. Inget konto krävs."
   },
   "goodToKnow": {
     "title": "Bra att veta",
