@@ -57,15 +57,20 @@ VITE_FIREBASE_MEASUREMENT_ID=
 AppTopBar (logo · language picker)
 AppBreadcrumbs (Home · share)
 <main>
-  Hero            headline, subhead, Get sicorder button, "Free · Works in Chrome" note
+  Hero            headline, subhead, Get sicorder button, "Free · Runs entirely in your browser" note
+  Problem         the full-screen-record-then-crop-and-trim routine sicorder replaces
   HowItWorks      3 step cards (Pick, Record, Stop)
-  Features        6 feature cards
+  Features        6 "why it saves time" cards
+  Audiences       4 "built for" cards (developers, designers/PMs, marketers, support/docs)
+  Privacy         "private by design" text + "good to know" list (http/https only, no audio, pointer shows)
   Contact         support email link
 </main>
 AppFooterForHomePage
 ```
 
-Components live in `src/components/`, and each reads only `t()` keys. `StepCard` and `FeatureCard` are small presentational components. Icons are inline SVG.
+Components live in `src/components/`, and each reads only `t()` keys. `StepCard` and `FeatureCard` are small presentational components (`FeatureCard` is reused for audiences).
+
+Target market and messaging come from the Chrome Web Store listing (`sicorder_extension/docs/store-listing.md`): web developers and marketers who today record the whole screen and crop/trim manually. Icons are inline SVG.
 
 ## English source text
 
@@ -74,34 +79,108 @@ Components live in `src/components/`, and each reads only `t()` keys. `StepCard`
 ```json
 {
   "seo": {
-    "title": "sicorder — Record any part of a web page as video",
-    "description": "sicorder is a Chrome extension that records video of a single element on any web page. Pick a region, press Record, and get an MP4 saved to your Downloads.",
-    "keywords": ["sicorder", "Chrome extension", "screen recorder", "element recorder", "record web page", "MP4", "tab capture", "UI demo video"]
+    "title": "sicorder — Record just part of a web page as video",
+    "description": "sicorder is a Chrome extension for web developers and marketers: pick an element, press Record, and get an MP4 of exactly that part of the page. No full-screen capture, no cropping, no trimming.",
+    "keywords": [
+      "sicorder",
+      "Chrome extension",
+      "record part of screen",
+      "element recorder",
+      "record web page section",
+      "crop screen recording",
+      "MP4",
+      "product demo video",
+      "bug report video"
+    ]
   },
   "hero": {
-    "title": "Record any part of a web page as video",
-    "subtitle": "sicorder is a Chrome extension that records just the element you pick — a chart, a form, a component — and saves it as an MP4.",
+    "title": "Record just the part of the web page you need",
+    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element. No full-screen capture, no cropping, no trimming.",
     "cta": "Get sicorder for Chrome",
     "ctaSoon": "Coming soon to the Chrome Web Store",
     "note": "Free · Runs entirely in your browser"
   },
+  "problem": {
+    "title": "Stop recording your whole screen just to show one part of it",
+    "text": "When you need a clip of one component, an animated chart, a form flow or a new feature, the usual routine is to record the full screen, crop it in a video editor, trim the dead time and export again. sicorder skips all of that: the video contains exactly the part you picked, and nothing else."
+  },
   "howItWorks": {
     "title": "How it works",
     "steps": {
-      "pick": { "title": "Pick a region", "text": "Open the sicorder side panel, turn on Pick Region, and click the element you want. A dotted border marks it." },
-      "record": { "title": "Record", "text": "Press Record and use the page as usual. Only the picked element ends up in the video." },
-      "stop": { "title": "Stop", "text": "Press Stop. The MP4 is saved to your Downloads with a name based on the site and the element." }
+      "pick": {
+        "title": "Pick a region",
+        "text": "Click the sicorder icon, turn on Pick Region and click the element you want. It highlights as you hover, like the element picker in DevTools, and a dotted border marks your choice."
+      },
+      "record": {
+        "title": "Record",
+        "text": "Press Record and use the page as usual. Only the picked element ends up in the video."
+      },
+      "stop": {
+        "title": "Stop",
+        "text": "Press Stop. The MP4 lands in your Downloads folder."
+      }
     }
   },
   "features": {
-    "title": "Built for clean clips",
+    "title": "Why it saves time",
     "items": {
-      "exact": { "title": "Exactly the element", "text": "No cropping afterwards. The video matches the element's bounds, pixel for pixel." },
-      "pause": { "title": "Pauses when out of view", "text": "Scroll the element away or switch tabs and recording pauses, so the gap never appears in the video." },
-      "smart": { "title": "Smart recording", "text": "Skips stretches where nothing changes, so a forgotten recording wastes at most half a second." },
-      "autoStop": { "title": "Stops on its own", "text": "If the element disappears or the page navigates, sicorder stops, saves what it has, and tells you why." },
-      "names": { "title": "Meaningful file names", "text": "Files are named after the site, the element and the date, like amazon_cart_2026_09_14.mp4." },
-      "private": { "title": "Stays on your computer", "text": "Recording and encoding happen in your browser. Nothing is uploaded." }
+      "exact": {
+        "title": "Exactly the element, no cropping",
+        "text": "The video matches the element's bounds pixel for pixel, at your display's full resolution."
+      },
+      "smart": {
+        "title": "No dead time to trim",
+        "text": "With Smart recording on, sicorder stops adding frames after half a second without any visual change and picks up again when something moves."
+      },
+      "pause": {
+        "title": "Pauses when you look away",
+        "text": "Scroll the element out of view or switch tabs and recording pauses, so the gap never shows up in the video."
+      },
+      "autoStop": {
+        "title": "Stops on its own",
+        "text": "If the element disappears or the page navigates away, sicorder stops, saves what it recorded and tells you why."
+      },
+      "names": {
+        "title": "Files you can find later",
+        "text": "Recordings are named after the site, the element and the date, like github_pull_request_2026_09_14.mp4."
+      },
+      "share": {
+        "title": "Ready to share",
+        "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
+      }
+    }
+  },
+  "audiences": {
+    "title": "Built for",
+    "items": {
+      "developers": {
+        "title": "Web developers",
+        "text": "Attach a clip of a bug or a finished feature to a pull request or issue, without anything else on your screen in the frame."
+      },
+      "designers": {
+        "title": "Designers and product managers",
+        "text": "Capture a single component or interaction for a spec, a review or a changelog."
+      },
+      "marketers": {
+        "title": "Marketers",
+        "text": "Record clean product clips for landing pages, social posts and launch announcements, cropped to the part of the app that matters."
+      },
+      "support": {
+        "title": "Support and documentation teams",
+        "text": "Show one widget or one step without the rest of the interface."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Private by design",
+    "text": "Recording and encoding happen entirely in your browser. sicorder doesn't upload your recordings, doesn't collect analytics and doesn't need an account. Videos go straight to your Downloads folder."
+  },
+  "goodToKnow": {
+    "title": "Good to know",
+    "items": {
+      "pages": "Works on regular web pages (http and https). Chrome doesn't allow extensions to record its own pages, such as chrome:// settings or the Web Store.",
+      "audio": "Records video only, no audio.",
+      "pointer": "The mouse pointer appears in the recording when it's over the picked element."
     }
   },
   "contact": {
@@ -111,7 +190,8 @@ Components live in `src/components/`, and each reads only `t()` keys. `StepCard`
   "footer": {
     "product": "Product",
     "company": "Sudobility",
-    "description": "sicorder records video of a single element on any web page."
+    "description": "sicorder records just the part of a web page you pick, as an MP4.",
+    "chromeWebStore": "Chrome Web Store"
   },
   "breadcrumbHome": "Home"
 }

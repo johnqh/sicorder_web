@@ -40,7 +40,7 @@ sicorder_web/
   public/locales/{15}/landing.json, howto.json
   src/main.tsx  src/App.tsx  src/i18n.ts  src/index.css  src/vite-env.d.ts
   src/config/constants.ts  seo.ts  initialize.ts  analytics.ts
-  src/components/Hero.tsx  HowItWorks.tsx  Features.tsx  ContactSection.tsx  StepCard.tsx  FeatureCard.tsx
+  src/components/Hero.tsx  ProblemSection.tsx  HowItWorks.tsx  Features.tsx  Audiences.tsx  PrivacySection.tsx  ContactSection.tsx  StepCard.tsx  FeatureCard.tsx
   src/stubs/firebase-auth.ts  di_web.ts  auth_lib.ts  subscription-components.ts  devops-components.ts  subscription_lib.ts
   CLAUDE.md  README.md
 ```
@@ -737,41 +737,115 @@ git commit -m "feat: sicorder brand assets (logo, favicons, og image)"
 
 **Interfaces:**
 - Consumes: `CONSTANTS`, `seoHeadConfig`, `supportedLanguages`, `languageNames`, `SupportedLanguage` from `src/i18n.ts`.
-- Produces: translation keys used by Task 4: `hero.{title,subtitle,cta,ctaSoon,note}`, `howItWorks.title`, `howItWorks.steps.{pick,record,stop}.{title,text}`, `features.title`, `features.items.{exact,pause,smart,autoStop,names,private}.{title,text}`, `contact.{title,subtitle}`, `footer.{product,company,description,chromeWebStore,contact}`, `breadcrumbHome`.
+- Produces: translation keys used by Task 4: `hero.{title,subtitle,cta,ctaSoon,note}`, `howItWorks.title`, `howItWorks.steps.{pick,record,stop}.{title,text}`, `features.title`, `features.items.{exact,smart,pause,autoStop,names,share}.{title,text}`, `problem.{title,text}`, `audiences.title`, `audiences.items.{developers,designers,marketers,support}.{title,text}`, `privacy.{title,text}`, `goodToKnow.title`, `goodToKnow.items.{pages,audio,pointer}`, `contact.{title,subtitle}`, `footer.{product,company,description,chromeWebStore}`, `breadcrumbHome`.
 
-- [ ] **Step 1: `public/locales/en/landing.json`** — spec text plus two footer link labels:
+- [ ] **Step 1: `public/locales/en/landing.json`** — exactly the spec's JSON:
 
 ```json
 {
   "seo": {
-    "title": "sicorder — Record any part of a web page as video",
-    "description": "sicorder is a Chrome extension that records video of a single element on any web page. Pick a region, press Record, and get an MP4 saved to your Downloads.",
-    "keywords": ["sicorder", "Chrome extension", "screen recorder", "element recorder", "record web page", "MP4", "tab capture", "UI demo video"]
+    "title": "sicorder — Record just part of a web page as video",
+    "description": "sicorder is a Chrome extension for web developers and marketers: pick an element, press Record, and get an MP4 of exactly that part of the page. No full-screen capture, no cropping, no trimming.",
+    "keywords": [
+      "sicorder",
+      "Chrome extension",
+      "record part of screen",
+      "element recorder",
+      "record web page section",
+      "crop screen recording",
+      "MP4",
+      "product demo video",
+      "bug report video"
+    ]
   },
   "hero": {
-    "title": "Record any part of a web page as video",
-    "subtitle": "sicorder is a Chrome extension that records just the element you pick — a chart, a form, a component — and saves it as an MP4.",
+    "title": "Record just the part of the web page you need",
+    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element. No full-screen capture, no cropping, no trimming.",
     "cta": "Get sicorder for Chrome",
     "ctaSoon": "Coming soon to the Chrome Web Store",
     "note": "Free · Runs entirely in your browser"
   },
+  "problem": {
+    "title": "Stop recording your whole screen just to show one part of it",
+    "text": "When you need a clip of one component, an animated chart, a form flow or a new feature, the usual routine is to record the full screen, crop it in a video editor, trim the dead time and export again. sicorder skips all of that: the video contains exactly the part you picked, and nothing else."
+  },
   "howItWorks": {
     "title": "How it works",
     "steps": {
-      "pick": { "title": "Pick a region", "text": "Open the sicorder side panel, turn on Pick Region, and click the element you want. A dotted border marks it." },
-      "record": { "title": "Record", "text": "Press Record and use the page as usual. Only the picked element ends up in the video." },
-      "stop": { "title": "Stop", "text": "Press Stop. The MP4 is saved to your Downloads with a name based on the site and the element." }
+      "pick": {
+        "title": "Pick a region",
+        "text": "Click the sicorder icon, turn on Pick Region and click the element you want. It highlights as you hover, like the element picker in DevTools, and a dotted border marks your choice."
+      },
+      "record": {
+        "title": "Record",
+        "text": "Press Record and use the page as usual. Only the picked element ends up in the video."
+      },
+      "stop": {
+        "title": "Stop",
+        "text": "Press Stop. The MP4 lands in your Downloads folder."
+      }
     }
   },
   "features": {
-    "title": "Built for clean clips",
+    "title": "Why it saves time",
     "items": {
-      "exact": { "title": "Exactly the element", "text": "No cropping afterwards. The video matches the element's bounds, pixel for pixel." },
-      "pause": { "title": "Pauses when out of view", "text": "Scroll the element away or switch tabs and recording pauses, so the gap never appears in the video." },
-      "smart": { "title": "Smart recording", "text": "Skips stretches where nothing changes, so a forgotten recording wastes at most half a second." },
-      "autoStop": { "title": "Stops on its own", "text": "If the element disappears or the page navigates, sicorder stops, saves what it has, and tells you why." },
-      "names": { "title": "Meaningful file names", "text": "Files are named after the site, the element and the date, like amazon_cart_2026_09_14.mp4." },
-      "private": { "title": "Stays on your computer", "text": "Recording and encoding happen in your browser. Nothing is uploaded." }
+      "exact": {
+        "title": "Exactly the element, no cropping",
+        "text": "The video matches the element's bounds pixel for pixel, at your display's full resolution."
+      },
+      "smart": {
+        "title": "No dead time to trim",
+        "text": "With Smart recording on, sicorder stops adding frames after half a second without any visual change and picks up again when something moves."
+      },
+      "pause": {
+        "title": "Pauses when you look away",
+        "text": "Scroll the element out of view or switch tabs and recording pauses, so the gap never shows up in the video."
+      },
+      "autoStop": {
+        "title": "Stops on its own",
+        "text": "If the element disappears or the page navigates away, sicorder stops, saves what it recorded and tells you why."
+      },
+      "names": {
+        "title": "Files you can find later",
+        "text": "Recordings are named after the site, the element and the date, like github_pull_request_2026_09_14.mp4."
+      },
+      "share": {
+        "title": "Ready to share",
+        "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
+      }
+    }
+  },
+  "audiences": {
+    "title": "Built for",
+    "items": {
+      "developers": {
+        "title": "Web developers",
+        "text": "Attach a clip of a bug or a finished feature to a pull request or issue, without anything else on your screen in the frame."
+      },
+      "designers": {
+        "title": "Designers and product managers",
+        "text": "Capture a single component or interaction for a spec, a review or a changelog."
+      },
+      "marketers": {
+        "title": "Marketers",
+        "text": "Record clean product clips for landing pages, social posts and launch announcements, cropped to the part of the app that matters."
+      },
+      "support": {
+        "title": "Support and documentation teams",
+        "text": "Show one widget or one step without the rest of the interface."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Private by design",
+    "text": "Recording and encoding happen entirely in your browser. sicorder doesn't upload your recordings, doesn't collect analytics and doesn't need an account. Videos go straight to your Downloads folder."
+  },
+  "goodToKnow": {
+    "title": "Good to know",
+    "items": {
+      "pages": "Works on regular web pages (http and https). Chrome doesn't allow extensions to record its own pages, such as chrome:// settings or the Web Store.",
+      "audio": "Records video only, no audio.",
+      "pointer": "The mouse pointer appears in the recording when it's over the picked element."
     }
   },
   "contact": {
@@ -781,9 +855,8 @@ git commit -m "feat: sicorder brand assets (logo, favicons, og image)"
   "footer": {
     "product": "Product",
     "company": "Sudobility",
-    "description": "sicorder records video of a single element on any web page.",
-    "chromeWebStore": "Chrome Web Store",
-    "contact": "Contact"
+    "description": "sicorder records just the part of a web page you pick, as an MP4.",
+    "chromeWebStore": "Chrome Web Store"
   },
   "breadcrumbHome": "Home"
 }
@@ -806,7 +879,7 @@ git commit -m "feat: sicorder brand assets (logo, favicons, og image)"
 }
 ```
 
-- [ ] **Step 3: Replace `src/App.tsx`** (sections are imported from Task 4, so create empty default-export stubs for them in this step: `export default function Hero() { return null; }` etc. for `Hero`, `HowItWorks`, `Features`, `ContactSection`)
+- [ ] **Step 3: Replace `src/App.tsx`** (sections are imported from Task 4, so create empty default-export stubs for them in this step: `export default function Hero() { return null; }` etc. for `Hero`, `ProblemSection`, `HowItWorks`, `Features`, `Audiences`, `PrivacySection`, `ContactSection`)
 
 ```tsx
 import { Suspense, useEffect, useMemo, type ReactNode } from 'react';
@@ -821,6 +894,9 @@ import { seoHeadConfig } from './config/seo';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import Features from './components/Features';
+import ProblemSection from './components/ProblemSection';
+import Audiences from './components/Audiences';
+import PrivacySection from './components/PrivacySection';
 import ContactSection from './components/ContactSection';
 
 const LANGUAGE_FLAGS: Record<SupportedLanguage, string> = {
@@ -908,7 +984,7 @@ function Layout() {
             shareConfig={{
               title: `${CONSTANTS.APP_NAME} — ${t('hero.title')}`,
               description: t('footer.description'),
-              hashtags: [CONSTANTS.APP_NAME, 'ChromeExtension', 'ScreenRecording'],
+              hashtags: [CONSTANTS.APP_NAME, 'ChromeExtension', 'ScreenRecording', 'WebDev'],
             }}
           />
         </div>
@@ -950,8 +1026,11 @@ function LandingPage() {
         structuredData={howToSchema}
       />
       <Hero />
+      <ProblemSection />
       <HowItWorks />
       <Features />
+      <Audiences />
+      <PrivacySection />
       <ContactSection />
     </>
   );
@@ -1001,7 +1080,7 @@ git commit -m "feat: app shell with language routing, SEO and English source tex
 ### Task 4: Page sections
 
 **Files:**
-- Create/replace: `src/components/StepCard.tsx`, `FeatureCard.tsx`, `Hero.tsx`, `HowItWorks.tsx`, `Features.tsx`, `ContactSection.tsx`
+- Create/replace: `src/components/StepCard.tsx`, `FeatureCard.tsx`, `Hero.tsx`, `ProblemSection.tsx`, `HowItWorks.tsx`, `Features.tsx`, `Audiences.tsx`, `PrivacySection.tsx`, `ContactSection.tsx`
 
 **Interfaces:**
 - Consumes: translation keys from Task 3; `CONSTANTS.CHROME_STORE_URL`, `CONSTANTS.SUPPORT_EMAIL`; `analyticsService.trackButtonClick`.
@@ -1148,7 +1227,7 @@ const FEATURES: { key: string; icon: ReactNode }[] = [
   { key: 'smart', icon: svg('M13 10V3L4 14h7v7l9-11h-7z') },
   { key: 'autoStop', icon: svg('M9 10h6v4H9zM12 21a9 9 0 100-18 9 9 0 000 18z') },
   { key: 'names', icon: svg('M7 7h.01M7 3h5l8 8-9 9-8-8V7a4 4 0 014-4z') },
-  { key: 'private', icon: svg('M12 11c1.1 0 2-.9 2-2V7a2 2 0 10-4 0v2c0 1.1.9 2 2 2zm-6 0h12v10H6V11z') },
+  { key: 'share', icon: svg('M8.7 10.7l6.6-3.4M8.7 13.3l6.6 3.4M18 8a3 3 0 100-6 3 3 0 000 6zM6 15a3 3 0 100-6 3 3 0 000 6zm12 7a3 3 0 100-6 3 3 0 000 6z') },
 ];
 
 export default function Features() {
@@ -1202,13 +1281,106 @@ export default function ContactSection() {
 }
 ```
 
+- [ ] **Step 6b: `src/components/ProblemSection.tsx`**
+
+```tsx
+import { useTranslation } from 'react-i18next';
+
+export default function ProblemSection() {
+  const { t } = useTranslation();
+  return (
+    <section className="py-12 sm:py-16">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-5">{t('problem.title')}</h2>
+        <p className="text-lg text-white/70">{t('problem.text')}</p>
+      </div>
+    </section>
+  );
+}
+```
+
+- [ ] **Step 6c: `src/components/Audiences.tsx`**
+
+```tsx
+import type { ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
+import FeatureCard from './FeatureCard';
+
+const svg = (d: string): ReactNode => (
+  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" d={d} />
+  </svg>
+);
+
+const AUDIENCES: { key: string; icon: ReactNode }[] = [
+  { key: 'developers', icon: svg('M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14') },
+  { key: 'designers', icon: svg('M4 20h4L18.5 9.5a2.8 2.8 0 00-4-4L4 16v4z') },
+  { key: 'marketers', icon: svg('M3 11v2a1 1 0 001 1h2l5 4V6L6 10H4a1 1 0 00-1 1zM16 8a5 5 0 010 8') },
+  { key: 'support', icon: svg('M8 10h8M8 14h5M21 12a9 9 0 01-13.5 7.8L3 21l1.2-4.5A9 9 0 1121 12z') },
+];
+
+export default function Audiences() {
+  const { t } = useTranslation();
+  return (
+    <section className="py-16 sm:py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">{t('audiences.title')}</h2>
+        <div className="grid gap-6 sm:grid-cols-2">
+          {AUDIENCES.map(({ key, icon }) => (
+            <FeatureCard
+              key={key}
+              icon={icon}
+              title={t(`audiences.items.${key}.title`)}
+              text={t(`audiences.items.${key}.text`)}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+```
+
+- [ ] **Step 6d: `src/components/PrivacySection.tsx`**
+
+```tsx
+import { useTranslation } from 'react-i18next';
+
+const NOTES = ['pages', 'audio', 'pointer'] as const;
+
+export default function PrivacySection() {
+  const { t } = useTranslation();
+  return (
+    <section className="py-16 sm:py-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-6 md:grid-cols-2">
+        <div className="glass rounded-2xl p-6 sm:p-8">
+          <h2 className="text-2xl font-bold text-white mb-4">{t('privacy.title')}</h2>
+          <p className="text-white/70">{t('privacy.text')}</p>
+        </div>
+        <div className="glass rounded-2xl p-6 sm:p-8">
+          <h2 className="text-2xl font-bold text-white mb-4">{t('goodToKnow.title')}</h2>
+          <ul className="space-y-3">
+            {NOTES.map(key => (
+              <li key={key} className="flex gap-3 text-white/70">
+                <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-record" />
+                <span>{t(`goodToKnow.items.${key}`)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+```
+
 - [ ] **Step 7: Build, lint, look**
 
 ```bash
 bun run build && bun run lint
 bun run preview --port 4011
 ```
-Take screenshots of `http://localhost:4011/en` at 1440×900 and 390×844 (Playwright from a sibling project, headless). Expected: hero with logo, the gradient title and the disabled "Coming soon" CTA; three numbered step cards; six feature cards; contact email; the sudobility top bar with a language picker and the footer. No horizontal scroll at 390 px.
+Take screenshots of `http://localhost:4011/en` at 1440×900 and 390×844 (Playwright from a sibling project, headless). Expected: hero with logo, the gradient title and the disabled "Coming soon" CTA; the problem statement; three numbered step cards; six feature cards; four audience cards; privacy and good-to-know panels; contact email; the sudobility top bar with a language picker and the footer. No horizontal scroll at 390 px.
 
 - [ ] **Step 8: Commit**
 
@@ -1261,7 +1433,7 @@ Landing page for the sicorder Chrome extension (`~/projects/sicorder_extension`)
 ```
 src/App.tsx              shell, routes, footer links, SEO head
 src/i18n.ts              supportedLanguages (canonical list of 15)
-src/components/          Hero, HowItWorks, Features, ContactSection, StepCard, FeatureCard
+src/components/          Hero, ProblemSection, HowItWorks, Features, Audiences, PrivacySection, ContactSection, StepCard, FeatureCard
 src/config/              constants (VITE_* env), seo, initialize (Firebase only when configured), analytics
 src/stubs/               no-op modules for building_blocks' optional peers (aliased in vite.config.ts)
 public/locales/{lang}/   landing.json, howto.json (en is the source)
@@ -1309,7 +1481,7 @@ No test framework: verify with build, lint, localized, and screenshots at 1440 a
 ```markdown
 # sicorder_web
 
-Landing page for sicorder, a Chrome extension that records video of a single element on any web page.
+Landing page for sicorder, a Chrome extension that records just the part of a web page you pick, as an MP4.
 
 ## Setup
 
