@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "process:static": "curl -sL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/process-static-files.ts -o /tmp/process-static-files.ts && bunx tsx /tmp/process-static-files.ts",
+    "process:static": "mkdir -p node_modules/.cache/workflows && curl -fsSL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/process-static-files.ts -o node_modules/.cache/workflows/process-static-files.ts && bunx tsx node_modules/.cache/workflows/process-static-files.ts",
     "dev": "bun run process:static && vite",
-    "seo:fetch": "curl -fsSL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/generate-seo-assets-v2.mjs -o /tmp/generate-seo-assets.mjs",
-    "build": "bun run process:static && bun run seo:fetch && node /tmp/generate-seo-assets.mjs public && tsc -b && vite build && node /tmp/generate-seo-assets.mjs dist",
+    "seo:fetch": "mkdir -p node_modules/.cache/workflows && curl -fsSL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/generate-seo-assets-v2.mjs -o node_modules/.cache/workflows/generate-seo-assets.mjs",
+    "build": "bun run process:static && bun run seo:fetch && node node_modules/.cache/workflows/generate-seo-assets.mjs public && tsc -b && vite build && node node_modules/.cache/workflows/generate-seo-assets.mjs dist",
     "preview": "vite preview",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
