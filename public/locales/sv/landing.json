@@ -16,7 +16,7 @@
   },
   "hero": {
     "title": "Registrera bara den del av webbsidan du behöver",
-    "subtitle": "Välj ett element, tryck på Spela in och få en MP4-fil som exakt visar det elementet. Ingen fullskärmscapture, ingen beskärning, ingen klippning.",
+    "subtitle": "Välj ett element, tryck på Spela in och få en MP4-fil som exakt visar det elementet, eller spara det som en PNG. Ingen helskärmsinspelning, ingen beskärning, ingen klippning.",
     "cta": "Hämta sicorder för Chrome",
     "ctaSoon": "Kommer snart till Chrome Web Store",
     "note": "Gratis · Kör helt i din webbläsare"
@@ -68,6 +68,14 @@
       "share": {
         "title": "Redo att dela",
         "text": "MP4 (H.264) spelas i Slack, dokument, pull requests, e-post och i alla videospelare."
+      },
+      "still": {
+        "title": "Skärmdumpar också",
+        "text": "Byt till Still, klicka på ett element, och en pixelexakt PNG av just det elementet hamnar i Nedladdningar, utan muspekaren."
+      },
+      "scroll": {
+        "title": "Rullningen sköts åt dig",
+        "text": "I Still-läget rullas elementet först fram, sedan återgår sidan dit den var."
       }
     }
   },

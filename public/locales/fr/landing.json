@@ -16,7 +16,7 @@
   },
   "hero": {
     "title": "Enregistrez uniquement la partie de la page Web dont vous avez besoin",
-    "subtitle": "Sélectionnez un élément, appuyez sur Enregistrer et obtenez un MP4 de cet élément uniquement. Pas de capture en plein écran, pas de recadrage, pas de troncation.",
+    "subtitle": "Sélectionnez un élément, appuyez sur Enregistrer et obtenez un MP4 de cet élément uniquement, ou enregistrez-le en PNG. Pas de capture en plein écran, pas de recadrage, pas de rognage.",
     "cta": "Obtenir sicorder pour Chrome",
     "ctaSoon": "Bientôt sur le Chrome Web Store",
     "note": "Gratuit · Fonctionne entièrement dans votre navigateur"
@@ -68,6 +68,14 @@
       "share": {
         "title": "Prêt à partager",
         "text": "MP4 (H.264) se lit dans Slack, les documents, les demandes de tirage, les e-mails et tous les lecteurs vidéo."
+      },
+      "still": {
+        "title": "Captures d'écran aussi",
+        "text": "Passez en mode « Still », cliquez sur un élément, et un PNG pixel-par-pixel de cet élément seul atterrit dans le dossier Téléchargements, sans le pointeur de la souris."
+      },
+      "scroll": {
+        "title": "Le défilement, on s'en charge",
+        "text": "En mode Still, l'élément est d'abord amené à l'écran, puis la page revient là où elle était."
       }
     }
   },

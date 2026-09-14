@@ -16,7 +16,7 @@
   },
   "hero": {
     "title": "Graba solo la parte de la página web que necesitas",
-    "subtitle": "Seleccione un elemento, presione Grabar y obtenga un MP4 exactamente de ese elemento. Sin captura de pantalla completa, sin recorte, sin recorte.",
+    "subtitle": "Selecciona un elemento, pulsa Grabar y obtén un MP4 de exactamente ese elemento, o guárdalo como PNG. Sin captura de pantalla completa, sin recortes ni ediciones.",
     "cta": "Obtener sicorder para Chrome",
     "ctaSoon": "Próximamente en la Chrome Web Store",
     "note": "Gratis · Se ejecuta completamente en su navegador"
@@ -68,6 +68,14 @@
       "share": {
         "title": "Listo para compartir",
         "text": "MP4 (H.264) se reproduce en Slack, documentos, solicitudes de extracción, correos electrónicos y reproductores de video."
+      },
+      "still": {
+        "title": "También capturas de pantalla",
+        "text": "Cambie a Still, haga clic en un elemento y un PNG exacto de solo ese elemento se guardará en Descargas, sin el puntero del ratón."
+      },
+      "scroll": {
+        "title": "Nos ocupamos del desplazamiento",
+        "text": "En el modo Still, el elemento se desplaza primero a la vista y luego la página vuelve a donde estaba."
       }
     }
   },

@@ -16,7 +16,7 @@
   },
   "hero": {
     "title": "Record just the part of the web page you need",
-    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element. No full-screen capture, no cropping, no trimming.",
+    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element, or save it as a PNG. No full-screen capture, no cropping, no trimming.",
     "cta": "Get sicorder for Chrome",
     "ctaSoon": "Coming soon to the Chrome Web Store",
     "note": "Free · Runs entirely in your browser"
@@ -68,6 +68,14 @@
       "share": {
         "title": "Ready to share",
         "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
+      },
+      "still": {
+        "title": "Screenshots too",
+        "text": "Switch to Still, click an element, and a pixel-exact PNG of just that element lands in Downloads, without the mouse pointer."
+      },
+      "scroll": {
+        "title": "Scroll handled for you",
+        "text": "Still captures bring the element into view first, then put the page back where it was."
       }
     }
   },

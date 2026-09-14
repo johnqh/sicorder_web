@@ -21,6 +21,8 @@ const FEATURES: { key: string; icon: ReactNode }[] = [
   { key: 'pause', icon: svg('M10 9v6m4-6v6M12 21a9 9 0 100-18 9 9 0 000 18z') },
   { key: 'autoStop', icon: svg('M9 10h6v4H9zM12 21a9 9 0 100-18 9 9 0 000 18z') },
   { key: 'names', icon: svg('M7 7h.01M7 3h5l8 8-9 9-8-8V7a4 4 0 014-4z') },
+  { key: 'still', icon: svg('M4 8h3l2-3h6l2 3h3v11H4V8zm8 9a4 4 0 100-8 4 4 0 000 8z') },
+  { key: 'scroll', icon: svg('M12 4v16m0-16l-4 4m4-4l4 4m-4 12l-4-4m4 4l4-4') },
   {
     key: 'share',
     icon: svg(
@@ -37,7 +39,7 @@ export default function Features() {
         <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
           {t('features.title')}
         </h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {FEATURES.map(({ key, icon }) => (
             <FeatureCard
               key={key}

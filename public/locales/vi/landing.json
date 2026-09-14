@@ -16,7 +16,7 @@
   },
   "hero": {
     "title": "Chỉ ghi lại phần của trang web bạn cần",
-    "subtitle": "Chọn một phần tử, nhấn Ghi lại và nhận một file MP4 chứa chính xác phần tử đó. Không ghi toàn màn hình, không cắt xén, không rút ngắn.",
+    "subtitle": "Chọn một phần tử, nhấn Ghi lại và nhận một file MP4 chứa chính xác phần tử đó, hoặc lưu dưới dạng PNG. Không chụp toàn màn hình, không cần cắt khung, không cần cắt bớt.",
     "cta": "Tải sicorder cho Chrome",
     "ctaSoon": "Sắp có trên Chrome Web Store",
     "note": "Miễn phí · Chạy hoàn toàn trên trình duyệt của bạn"
@@ -68,6 +68,14 @@
       "share": {
         "title": "Sẵn sàng chia sẻ",
         "text": "MP4 (H.264) phát được trên Slack, tài liệu, pull request, email và mọi trình phát video."
+      },
+      "still": {
+        "title": "Chụp ảnh màn hình nữa",
+        "text": "Chuyển sang chế độ Still, nhấp vào một phần tử và một ảnh PNG chính xác từng pixel chỉ của phần tử đó sẽ được lưu vào thư mục Downloads, mà không có con trỏ chuột."
+      },
+      "scroll": {
+        "title": "Tự động cuộn trang",
+        "text": "Ở chế độ Still, trang sẽ cuộn để hiện phần tử trước, rồi trở về vị trí cũ."
       }
     }
   },

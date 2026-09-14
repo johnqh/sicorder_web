@@ -16,7 +16,7 @@
   },
   "hero": {
     "title": "Zeichnen Sie nur den Teil der Webseite auf, den Sie benötigen",
-    "subtitle": "Wählen Sie ein Element, drücken Sie Aufnehmen und erhalten Sie eine MP4-Datei genau dieses Elements. Keine Vollbildaufnahme, kein Zuschneiden, kein Beschneiden.",
+    "subtitle": "Wählen Sie ein Element, klicken Sie auf „Aufnehmen“ und erhalten Sie eine MP4-Datei genau dieses Elements oder speichern Sie es als PNG. Keine Vollbildaufnahme, kein Zuschneiden, kein Kürzen.",
     "cta": "sicorder für Chrome erhalten",
     "ctaSoon": "Demnächst im Chrome Web Store",
     "note": "Kostenlos · Läuft vollständig in Ihrem Browser"
@@ -68,6 +68,14 @@
       "share": {
         "title": "Bereit zum Teilen",
         "text": "MP4 (H.264) wird in Slack, Dokumenten, Pull Requests, E-Mails und jedem Videoplayer abgespielt."
+      },
+      "still": {
+        "title": "Auch Screenshots",
+        "text": "Wechseln Sie zu „Still“, klicken Sie auf ein Element, und eine pixelgenaue PNG-Datei genau dieses Elements wird ohne Mauszeiger im Ordner „Downloads“ gespeichert."
+      },
+      "scroll": {
+        "title": "Scrollen übernehmen wir",
+        "text": "Bei Still-Aufnahmen wird das Element zuerst ins Bild gescrollt, danach springt die Seite an ihre alte Position zurück."
       }
     }
   },

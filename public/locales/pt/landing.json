@@ -16,7 +16,7 @@
   },
   "hero": {
     "title": "Registre apenas a parte da página da web que você precisa",
-    "subtitle": "Selecione um elemento, pressione Gravar e obtenha um MP4 exatamente desse elemento. Sem captura em tela cheia, sem recorte, sem corte.",
+    "subtitle": "Selecione um elemento, pressione Gravar e obtenha um MP4 exatamente desse elemento, ou salve-o como PNG. Sem captura em tela cheia, sem recortes, sem edição.",
     "cta": "Obter sicorder para o Chrome",
     "ctaSoon": "Em breve na Chrome Web Store",
     "note": "Grátis · Executa inteiramente no seu navegador"
@@ -68,6 +68,14 @@
       "share": {
         "title": "Pronto para compartilhar",
         "text": "MP4 (H.264) é reproduzido no Slack, documentos, pull requests, e-mail e em todos os players de vídeo."
+      },
+      "still": {
+        "title": "Capturas de tela também",
+        "text": "Mude para o modo Still, clique em um elemento e um PNG exato apenas desse elemento será baixado para a pasta Downloads, sem o ponteiro do mouse."
+      },
+      "scroll": {
+        "title": "A rolagem fica por nossa conta",
+        "text": "No modo Still, o elemento é trazido para a tela primeiro e depois a página volta para onde estava."
       }
     }
   },
