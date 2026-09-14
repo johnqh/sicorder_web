@@ -1,118 +1,117 @@
 {
   "seo": {
-    "title": "sicorder — Record just part of a web page as video",
-    "description": "sicorder is a Chrome extension for web developers and marketers: pick an element, press Record, and get an MP4 of exactly that part of the page. No full-screen capture, no cropping, no trimming.",
+    "title": "sicorder — 웹 페이지의 일부만 비디오로 기록",
+    "description": "sicorder는 웹 개발자와 마케터를 위한 Chrome 확장 프로그램입니다: 요소를 선택하고 'Record'를 누르면 해당 페이지 영역의 MP4가 생성됩니다. 전체 화면 캡처, 잘라내기, 자르기 없이 정확한 부분만 캡처합니다.",
     "keywords": [
       "sicorder",
-      "Chrome extension",
-      "record part of screen",
-      "element recorder",
-      "record web page section",
-      "crop screen recording",
+      "Chrome 확장 프로그램",
+      "화면 일부 녹화",
+      "요소 기록기",
+      "웹 페이지 섹션 기록",
+      "작물 화면 녹화",
       "MP4",
-      "product demo video",
-      "bug report video"
+      "제품 데모 비디오",
+      "버그 보고 비디오"
     ]
   },
   "hero": {
-    "title": "Record just the part of the web page you need",
-    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element. No full-screen capture, no cropping, no trimming.",
-    "cta": "Get sicorder for Chrome",
-    "ctaSoon": "Coming soon to the Chrome Web Store",
-    "note": "Free · Runs entirely in your browser"
+    "title": "필요한 웹 페이지 부분만 기록",
+    "subtitle": "요소를 선택하고 '녹화'를 누르면 해당 요소의 MP4가 생성됩니다. 전체 화면 캡처, 잘라내기, 자르기 없음.",
+    "cta": "Chrome용 sicorder 받기",
+    "ctaSoon": "크롬 웹 스토어에 곧 출시 예정",
+    "note": "무료 · 브라우저에서 완전히 실행"
   },
   "problem": {
-    "title": "Stop recording your whole screen just to show one part of it",
-    "text": "When you need a clip of one component, an animated chart, a form flow or a new feature, the usual routine is to record the full screen, crop it in a video editor, trim the dead time and export again. sicorder skips all of that: the video contains exactly the part you picked, and nothing else."
+    "title": "일부만 표시하기 위해 전체 화면을 녹화하는 것은 그만하세요",
+    "text": "한 구성 요소의 클립, 애니메이션 차트, 폼 흐름 또는 새 기능이 필요할 때 일반적인 절차는 전체 화면을 녹화하고, 비디오 편집기에서 잘라내고, 불필요한 부분을 제거한 후 다시 내보내는 것입니다. sicorder는 이러한 과정을 모두 생략합니다: 비디오에는 선택한 부분만 정확히 포함되어 있으며, 다른 내용은 없습니다."
   },
   "howItWorks": {
-    "title": "How it works",
+    "title": "작동 원리",
     "steps": {
       "pick": {
-        "title": "Pick a region",
-        "text": "Click the sicorder icon, turn on Pick Region and click the element you want. It highlights as you hover, like the element picker in DevTools, and a dotted border marks your choice."
+        "title": "영역 선택",
+        "text": "sicorder 아이콘을 클릭하고 '영역 선택'을 켠 후 선택할 요소를 클릭하세요. DevTools의 요소 선택기처럼 요소 위에 마우스를 올리면 강조 표시되며, 선택한 요소는 점선 테두리로 표시됩니다."
       },
       "record": {
-        "title": "Record",
-        "text": "Press Record and use the page as usual. Only the picked element ends up in the video."
+        "title": "녹화",
+        "text": "녹음을 기록하고 페이지를 평소대로 사용하십시오. 선택된 요소만 비디오에 기록됩니다."
       },
       "stop": {
-        "title": "Stop",
-        "text": "Press Stop. The MP4 lands in your Downloads folder."
+        "title": "중지",
+        "text": "중지를 누르세요. MP4 파일이 다운로드 폴더에 저장됩니다."
       }
     }
   },
   "features": {
-    "title": "Why it saves time",
+    "title": "시간을 절약하는 이유",
     "items": {
       "exact": {
-        "title": "Exactly the element, no cropping",
-        "text": "The video matches the element's bounds pixel for pixel, at your display's full resolution."
+        "title": "정확히 요소, 잘라내지 않음",
+        "text": "동영상은 디스플레이의 전체 해상도에서 요소의 경계를 픽셀 단위로 정확히 일치합니다."
       },
       "smart": {
-        "title": "No dead time to trim",
-        "text": "With Smart recording on, sicorder stops adding frames after half a second without any visual change and picks up again when something moves."
+        "title": "다듬기를 위한 대기 시간 없음",
+        "text": "스마트 녹화가 활성화되면 sicorder는 시각적 변화가 반 초 이상 없을 경우 프레임 추가를 중단하고 움직임이 감지되면 다시 녹화를 시작합니다."
       },
       "pause": {
-        "title": "Pauses when you look away",
-        "text": "Scroll the element out of view or switch tabs and recording pauses, so the gap never shows up in the video."
+        "title": "고개를 돌리면 일시 정지",
+        "text": "요소를 화면 밖으로 스크롤하거나 탭을 전환하면 녹화가 일시 중지되므로 비디오에 간격이 표시되지 않습니다."
       },
       "autoStop": {
-        "title": "Stops on its own",
-        "text": "If the element disappears or the page navigates away, sicorder stops, saves what it recorded and tells you why."
+        "title": "자동 정지",
+        "text": "요소가 사라지거나 페이지가 이동하면 sicorder 가 중지되고, 기록한 내용을 저장하며 그 이유를 알려줍니다."
       },
       "names": {
-        "title": "Files you can find later",
-        "text": "Recordings are named after the site, the element and the date, like github_pull_request_2026_09_14.mp4."
+        "title": "나중에 찾을 수 있는 파일",
+        "text": "녹음은 사이트, 요소 및 날짜에 따라 이름이 지정되며, 예를 들어 github_pull_request_2026_09_14.mp4 와 같습니다."
       },
       "share": {
-        "title": "Ready to share",
-        "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
+        "title": "공유할 준비가 되었습니다",
+        "text": "MP4(H.264) 은 Slack, 문서, 풀 리퀘스트, 이메일 및 모든 비디오 플레이어에서 재생됩니다."
       }
     }
   },
   "audiences": {
-    "title": "Built for",
+    "title": "이런 분들께",
     "items": {
       "developers": {
-        "title": "Web developers",
-        "text": "Attach a clip of a bug or a finished feature to a pull request or issue, without anything else on your screen in the frame."
+        "title": "웹 개발자",
+        "text": "스크린 프레임에 다른 것은 없이 버그 클립이나 완료된 기능을 풀 리퀘스트나 이슈에 첨부하세요."
       },
       "designers": {
-        "title": "Designers and product managers",
-        "text": "Capture a single component or interaction for a spec, a review or a changelog."
+        "title": "디자이너 및 제품 관리자",
+        "text": "명세서, 검토 또는 변경 로그를 위해 단일 구성 요소 또는 상호 작용을 캡처합니다."
       },
       "marketers": {
-        "title": "Marketers",
-        "text": "Record clean product clips for landing pages, social posts and launch announcements, cropped to the part of the app that matters."
+        "title": "마케터",
+        "text": "랜딩 페이지, 소셜 게시물 및 출시 안내에 사용할 깨끗한 제품 클립을 기록하세요. 앱의 핵심 부분만 잘라냅니다."
       },
       "support": {
-        "title": "Support and documentation teams",
-        "text": "Show one widget or one step without the rest of the interface."
+        "title": "지원 및 문서화 팀",
+        "text": "인터페이스의 나머지 부분 없이 위젯 또는 단계 하나를 표시합니다."
       }
     }
   },
   "privacy": {
-    "title": "Private by design",
-    "text": "Recording and encoding happen entirely in your browser. sicorder doesn't upload your recordings, doesn't collect analytics and doesn't need an account. Videos go straight to your Downloads folder."
+    "title": "사생활 보호 설계",
+    "text": "녹음 및 인코딩은 브라우저 내에서 완전히 처리됩니다. sicorder는 녹음 파일을 업로드하지 않으며, 분석 데이터를 수집하지 않고, 계정 생성도 필요하지 않습니다. 비디오는 바로 다운로드 폴더로 저장됩니다."
   },
   "goodToKnow": {
-    "title": "Good to know",
+    "title": "알아두면 좋은 점",
     "items": {
-      "pages": "Works on regular web pages (http and https). Chrome doesn't allow extensions to record its own pages, such as chrome:// settings or the Web Store.",
-      "audio": "Records video only, no audio.",
-      "pointer": "The mouse pointer appears in the recording when it's over the picked element."
+      "pages": "일반 웹 페이지(http 및 https)에서 작동합니다. Chrome은 chrome:// 설정이나 웹 스토어와 같은 Chrome 자체 페이지를 확장 프로그램이 기록하는 것을 허용하지 않습니다.",
+      "audio": "오디오 없이 비디오만 녹화합니다.",
+      "pointer": "선택한 요소 위에 있을 때 녹화에서 마우스 포인터가 표시됩니다."
     }
   },
   "contact": {
-    "title": "Questions or feedback?",
-    "subtitle": "We'd love to hear how you use sicorder."
+    "title": "질문이나 피드백?",
+    "subtitle": "sicorder를 어떻게 활용하는지 들려주세요."
   },
   "footer": {
-    "product": "Product",
-    "company": "Sudobility",
-    "description": "sicorder records just the part of a web page you pick, as an MP4.",
-    "chromeWebStore": "Chrome Web Store"
+    "product": "제품",
+    "description": "sicorder 는 선택한 웹 페이지의 일부를 MP4 형식으로 기록합니다.",
+    "chromeWebStore": "Chrome 웹 스토어"
   },
-  "breadcrumbHome": "Home"
+  "breadcrumbHome": "홈"
 }

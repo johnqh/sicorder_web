@@ -1,118 +1,117 @@
 {
   "seo": {
-    "title": "sicorder — Record just part of a web page as video",
-    "description": "sicorder is a Chrome extension for web developers and marketers: pick an element, press Record, and get an MP4 of exactly that part of the page. No full-screen capture, no cropping, no trimming.",
+    "title": "sicorder — Spela endast in en del av en webbsida som video",
+    "description": "sicorder är ett Chrome-tillägg för webbutvecklare och marknadsförare: markera ett element, klicka på 'Record', och få en MP4-fil som exakt visar den delen av sidan. Inget skärmdump i helskärm, ingen beskärning, ingen klippning.",
     "keywords": [
       "sicorder",
-      "Chrome extension",
-      "record part of screen",
-      "element recorder",
-      "record web page section",
-      "crop screen recording",
+      "Chrome-tillägg",
+      "spela in en del av skärmen",
+      "elementrekordare",
+      "spara webbsidsektion",
+      "skärmdump av skörd",
       "MP4",
-      "product demo video",
-      "bug report video"
+      "produkt demonstrationsvideo",
+      "felrapportvideo"
     ]
   },
   "hero": {
-    "title": "Record just the part of the web page you need",
-    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element. No full-screen capture, no cropping, no trimming.",
-    "cta": "Get sicorder for Chrome",
-    "ctaSoon": "Coming soon to the Chrome Web Store",
-    "note": "Free · Runs entirely in your browser"
+    "title": "Registrera bara den del av webbsidan du behöver",
+    "subtitle": "Välj ett element, tryck på Spela in och få en MP4-fil som exakt visar det elementet. Ingen fullskärmscapture, ingen beskärning, ingen klippning.",
+    "cta": "Hämta sicorder för Chrome",
+    "ctaSoon": "Kommer snart till Chrome Web Store",
+    "note": "Gratis · Kör helt i din webbläsare"
   },
   "problem": {
-    "title": "Stop recording your whole screen just to show one part of it",
-    "text": "When you need a clip of one component, an animated chart, a form flow or a new feature, the usual routine is to record the full screen, crop it in a video editor, trim the dead time and export again. sicorder skips all of that: the video contains exactly the part you picked, and nothing else."
+    "title": "Sluta spela in hela skärmen bara för att visa en del av den",
+    "text": "När du behöver en klippning av en komponent, ett animerat diagram, ett formulärflöde eller en ny funktion är den vanliga rutinen att spela in hela skärmen, beskära den i en videoredigerare, klippa bort dödtid och exportera igen. sicorder hoppar över allt detta: videon innehåller exakt den del du valde, och inget annat."
   },
   "howItWorks": {
-    "title": "How it works",
+    "title": "Så här fungerar det",
     "steps": {
       "pick": {
-        "title": "Pick a region",
-        "text": "Click the sicorder icon, turn on Pick Region and click the element you want. It highlights as you hover, like the element picker in DevTools, and a dotted border marks your choice."
+        "title": "Välj ett område",
+        "text": "Klicka på sicorder-ikonen, aktivera Välj region och klicka på det element du vill ha. Det markeras när du för musen över det, precis som elementväljaren i DevTools, och en prickad ram markerar ditt val."
       },
       "record": {
-        "title": "Record",
-        "text": "Press Record and use the page as usual. Only the picked element ends up in the video."
+        "title": "Spela in",
+        "text": "Tryck på Spela in och använd sidan som vanligt. Endast det markerade elementet hamnar i videon."
       },
       "stop": {
-        "title": "Stop",
-        "text": "Press Stop. The MP4 lands in your Downloads folder."
+        "title": "Stoppa",
+        "text": "Stopp. MP4-filen sparas i din mapp för Nedladdningar."
       }
     }
   },
   "features": {
-    "title": "Why it saves time",
+    "title": "Varför det sparar tid",
     "items": {
       "exact": {
-        "title": "Exactly the element, no cropping",
-        "text": "The video matches the element's bounds pixel for pixel, at your display's full resolution."
+        "title": "Exakt samma element, ingen beskärning",
+        "text": "Videon matchar elementets gränser pixel för pixel, vid din skärms fulla upplösning."
       },
       "smart": {
-        "title": "No dead time to trim",
-        "text": "With Smart recording on, sicorder stops adding frames after half a second without any visual change and picks up again when something moves."
+        "title": "Ingen dödtid för trimning",
+        "text": "Med Smart inspelning på slutar sicorder att lägga till bilder efter en halv sekund utan visuella förändringar och fortsätter när något rör sig."
       },
       "pause": {
-        "title": "Pauses when you look away",
-        "text": "Scroll the element out of view or switch tabs and recording pauses, so the gap never shows up in the video."
+        "title": "Pausar när du tittar bort",
+        "text": "Scrolla ut elementet ur vy eller byt flikar så pausas inspelningen, så att gapet aldrig syns i videon."
       },
       "autoStop": {
-        "title": "Stops on its own",
-        "text": "If the element disappears or the page navigates away, sicorder stops, saves what it recorded and tells you why."
+        "title": "Stannar av sig själv",
+        "text": "Om elementet försvinner eller sidan navigerar bort stannar sicorder, sparar vad den har registrerat och berättar varför."
       },
       "names": {
-        "title": "Files you can find later",
-        "text": "Recordings are named after the site, the element and the date, like github_pull_request_2026_09_14.mp4."
+        "title": "Filer som du kan hitta senare",
+        "text": "Inspelningar döps efter webbplatsen, elementet och datumet, till exempel github_pull_request_2026_09_14.mp4."
       },
       "share": {
-        "title": "Ready to share",
-        "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
+        "title": "Redo att dela",
+        "text": "MP4 (H.264) spelas i Slack, dokument, pull requests, e-post och i alla videospelare."
       }
     }
   },
   "audiences": {
-    "title": "Built for",
+    "title": "Gjord för",
     "items": {
       "developers": {
-        "title": "Web developers",
-        "text": "Attach a clip of a bug or a finished feature to a pull request or issue, without anything else on your screen in the frame."
+        "title": "webbutvecklare",
+        "text": "Bifoga en klippning av ett fel eller en slutförd funktion till en pull request eller ett ärende, utan något annat på skärmen i bilden."
       },
       "designers": {
-        "title": "Designers and product managers",
-        "text": "Capture a single component or interaction for a spec, a review or a changelog."
+        "title": "Designers och produktchefer",
+        "text": "Fånga en enskild komponent eller interaktion för en specifikation, en granskning eller en ändringslogg."
       },
       "marketers": {
-        "title": "Marketers",
-        "text": "Record clean product clips for landing pages, social posts and launch announcements, cropped to the part of the app that matters."
+        "title": "Marknadsförare",
+        "text": "Spela in rena produktklipp för landningssidor, sociala inlägg och lanseringsannonser, beskurna till den del av appen som är viktig."
       },
       "support": {
-        "title": "Support and documentation teams",
-        "text": "Show one widget or one step without the rest of the interface."
+        "title": "Support- och dokumentationsteam",
+        "text": "Visa en widget eller ett steg utan resten av gränssnittet."
       }
     }
   },
   "privacy": {
-    "title": "Private by design",
-    "text": "Recording and encoding happen entirely in your browser. sicorder doesn't upload your recordings, doesn't collect analytics and doesn't need an account. Videos go straight to your Downloads folder."
+    "title": "Integritet från design",
+    "text": "Inspelning och kodning sker helt i din webbläsare. sicorder laddar inte upp dina inspelningar, samlar inte in analysdata och kräver inget konto. Videor sparas direkt i din mapp för nedladdningar."
   },
   "goodToKnow": {
-    "title": "Good to know",
+    "title": "Bra att veta",
     "items": {
-      "pages": "Works on regular web pages (http and https). Chrome doesn't allow extensions to record its own pages, such as chrome:// settings or the Web Store.",
-      "audio": "Records video only, no audio.",
-      "pointer": "The mouse pointer appears in the recording when it's over the picked element."
+      "pages": "Verkar på vanliga webbsidor (http och https). Chrome tillåter inte att tillägg registrerar sina egna sidor, såsom chrome://-inställningar eller Webbutiken.",
+      "audio": "Spelar in video endast, ingen ljud.",
+      "pointer": "Muspekaren visas i inspelningen när den är över det valda elementet."
     }
   },
   "contact": {
-    "title": "Questions or feedback?",
-    "subtitle": "We'd love to hear how you use sicorder."
+    "title": "Frågor eller feedback?",
+    "subtitle": "Vi vill gärna höra hur du använder sicorder."
   },
   "footer": {
-    "product": "Product",
-    "company": "Sudobility",
-    "description": "sicorder records just the part of a web page you pick, as an MP4.",
+    "product": "Produkt",
+    "description": "sicorder sparar bara den del av en webbsida du väljer, som en MP4.",
     "chromeWebStore": "Chrome Web Store"
   },
-  "breadcrumbHome": "Home"
+  "breadcrumbHome": "Hem"
 }

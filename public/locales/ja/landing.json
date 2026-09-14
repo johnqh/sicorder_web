@@ -1,118 +1,117 @@
 {
   "seo": {
-    "title": "sicorder — Record just part of a web page as video",
-    "description": "sicorder is a Chrome extension for web developers and marketers: pick an element, press Record, and get an MP4 of exactly that part of the page. No full-screen capture, no cropping, no trimming.",
+    "title": "sicorder — ウェブページの一部分をビデオとして記録",
+    "description": "sicorderはWeb開発者やマーケター向けのChrome拡張機能です。要素を選択して「Record」を押すだけで、その部分のMP4動画が取得できます。全画面キャプチャも、切り抜きも、トリミングも不要です。",
     "keywords": [
       "sicorder",
-      "Chrome extension",
-      "record part of screen",
-      "element recorder",
-      "record web page section",
-      "crop screen recording",
+      "Chrome拡張機能",
+      "画面の一部を録画",
+      "要素レコーダー",
+      "ウェブページセクションを記録",
+      "作物の画面録画",
       "MP4",
-      "product demo video",
-      "bug report video"
+      "製品デモビデオ",
+      "バグレポートビデオ"
     ]
   },
   "hero": {
-    "title": "Record just the part of the web page you need",
-    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element. No full-screen capture, no cropping, no trimming.",
-    "cta": "Get sicorder for Chrome",
-    "ctaSoon": "Coming soon to the Chrome Web Store",
-    "note": "Free · Runs entirely in your browser"
+    "title": "必要なWebページの部分のみを記録",
+    "subtitle": "要素を選択して「録画」を押すだけで、その要素だけのMP4が取得できます。全画面キャプチャなし、切り抜きなし、トリミングなし。",
+    "cta": "Chrome用sicorderを入手",
+    "ctaSoon": "Chrome ウェブストアに近日公開",
+    "note": "無料 · ブラウザ内で完全に動作"
   },
   "problem": {
-    "title": "Stop recording your whole screen just to show one part of it",
-    "text": "When you need a clip of one component, an animated chart, a form flow or a new feature, the usual routine is to record the full screen, crop it in a video editor, trim the dead time and export again. sicorder skips all of that: the video contains exactly the part you picked, and nothing else."
+    "title": "一部分を表示するために画面全体を録画するのはやめてください",
+    "text": "1つのコンポーネントのクリップ、アニメーションチャート、フォームフロー、または新機能が必要になった場合、通常の作業手順は、画面全体を録画し、ビデオエディタで切り抜き、無駄な時間をトリミングして、再度エクスポートすることです。sicorder はそのすべてを省略します：出力されるビデオには、あなたが選択した部分のみが含まれ、他の部分は含まれません。"
   },
   "howItWorks": {
-    "title": "How it works",
+    "title": "仕組み",
     "steps": {
       "pick": {
-        "title": "Pick a region",
-        "text": "Click the sicorder icon, turn on Pick Region and click the element you want. It highlights as you hover, like the element picker in DevTools, and a dotted border marks your choice."
+        "title": "範囲を選ぶ",
+        "text": "sicorder アイコンをクリックし、「領域選択」をオンにして、選択したい要素をクリックしてください。DevToolsの要素ピッカーのように、カーソルを合わせるとハイライト表示され、選択した要素は点線枠でマークされます。"
       },
       "record": {
-        "title": "Record",
-        "text": "Press Record and use the page as usual. Only the picked element ends up in the video."
+        "title": "録画",
+        "text": "録画を記録し、ページを通常どおり使用してください。選択された要素のみが動画に記録されます。"
       },
       "stop": {
-        "title": "Stop",
-        "text": "Press Stop. The MP4 lands in your Downloads folder."
+        "title": "停止",
+        "text": "停止を押してください。MP4ファイルはダウンロードフォルダに保存されます。"
       }
     }
   },
   "features": {
-    "title": "Why it saves time",
+    "title": "時間を節約できる理由",
     "items": {
       "exact": {
-        "title": "Exactly the element, no cropping",
-        "text": "The video matches the element's bounds pixel for pixel, at your display's full resolution."
+        "title": "要素そのもの、切り抜きなし",
+        "text": "動画は、ディスプレイの全解像度において、要素の境界をピクセル単位で完全に一致しています。"
       },
       "smart": {
-        "title": "No dead time to trim",
-        "text": "With Smart recording on, sicorder stops adding frames after half a second without any visual change and picks up again when something moves."
+        "title": "トリミングのためのデッドタイムなし",
+        "text": "スマート録画をオンにすると、sicorder は視覚的な変化がない状態で0.5秒経過するとフレームの追加を停止し、動きが発生すると録画を再開します。"
       },
       "pause": {
-        "title": "Pauses when you look away",
-        "text": "Scroll the element out of view or switch tabs and recording pauses, so the gap never shows up in the video."
+        "title": "見つめると一時停止",
+        "text": "要素をビュー外にスクロールするか、タブを切り替えると録画が一時停止し、ビデオにギャップが表示されません。"
       },
       "autoStop": {
-        "title": "Stops on its own",
-        "text": "If the element disappears or the page navigates away, sicorder stops, saves what it recorded and tells you why."
+        "title": "自動停止",
+        "text": "要素が消滅したりページが移動したりした場合、sicorder は停止し、記録した内容を保存し、その理由を通知します。"
       },
       "names": {
-        "title": "Files you can find later",
-        "text": "Recordings are named after the site, the element and the date, like github_pull_request_2026_09_14.mp4."
+        "title": "後で見つけることができるファイル",
+        "text": "録画はサイト、要素、日付の名前が付けられており、例えば github_pull_request_2026_09_14.mp4 のようになります。"
       },
       "share": {
-        "title": "Ready to share",
-        "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
+        "title": "共有する準備ができました",
+        "text": "MP4 (H.264) は、Slack、ドキュメント、プルリクエスト、メール、すべてのビデオプレーヤーで再生されます。"
       }
     }
   },
   "audiences": {
-    "title": "Built for",
+    "title": "こんな方に",
     "items": {
       "developers": {
-        "title": "Web developers",
-        "text": "Attach a clip of a bug or a finished feature to a pull request or issue, without anything else on your screen in the frame."
+        "title": "Web開発者",
+        "text": "画面のフレーム内にそれ以外のものが映らないよう、バグのスクリーンショットまたは完成した機能のスクリーンショットをプルリクエストまたはイシューに添付してください。"
       },
       "designers": {
-        "title": "Designers and product managers",
-        "text": "Capture a single component or interaction for a spec, a review or a changelog."
+        "title": "デザイナーとプロダクトマネージャー",
+        "text": "仕様書、レビュー、または変更履歴のために、単一のコンポーネントまたは相互作用をキャプチャします。"
       },
       "marketers": {
-        "title": "Marketers",
-        "text": "Record clean product clips for landing pages, social posts and launch announcements, cropped to the part of the app that matters."
+        "title": "マーケター",
+        "text": "ランディングページ、ソーシャル投稿、ローンチ告知用のクリーンな製品クリップを録画し、アプリの重要な部分にクロップします。"
       },
       "support": {
-        "title": "Support and documentation teams",
-        "text": "Show one widget or one step without the rest of the interface."
+        "title": "サポートおよびドキュメントチーム",
+        "text": "インターフェースの他の部分を除き、ウィジェットまたはステップを1つ表示します。"
       }
     }
   },
   "privacy": {
-    "title": "Private by design",
-    "text": "Recording and encoding happen entirely in your browser. sicorder doesn't upload your recordings, doesn't collect analytics and doesn't need an account. Videos go straight to your Downloads folder."
+    "title": "プライバシーバイデザイン",
+    "text": "録画とエンコードはすべてブラウザ内で行われます。sicorderは録画データをアップロードせず、アナリティクスも収集せず、アカウントも不要です。動画は直接ダウンロードフォルダに保存されます。"
   },
   "goodToKnow": {
-    "title": "Good to know",
+    "title": "知っておきたいこと",
     "items": {
-      "pages": "Works on regular web pages (http and https). Chrome doesn't allow extensions to record its own pages, such as chrome:// settings or the Web Store.",
-      "audio": "Records video only, no audio.",
-      "pointer": "The mouse pointer appears in the recording when it's over the picked element."
+      "pages": "通常の Web ページ (http および https) で動作します。Chrome では、拡張機能が chrome://settings やウェブストアなど自身のページを記録することを許可していません。",
+      "audio": "音声なしのビデオのみを録画します。",
+      "pointer": "選択された要素の上にマウス ポインターがある場合、録画にマウス ポインターが表示されます。"
     }
   },
   "contact": {
-    "title": "Questions or feedback?",
-    "subtitle": "We'd love to hear how you use sicorder."
+    "title": "ご質問やフィードバックは？",
+    "subtitle": "sicorderの使用方法をお聞かせください。"
   },
   "footer": {
-    "product": "Product",
-    "company": "Sudobility",
-    "description": "sicorder records just the part of a web page you pick, as an MP4.",
-    "chromeWebStore": "Chrome Web Store"
+    "product": "製品",
+    "description": "sicorder は、選択したウェブページの一部分を MP4 形式で記録します。",
+    "chromeWebStore": "Chrome ウェブストア"
   },
-  "breadcrumbHome": "Home"
+  "breadcrumbHome": "ホーム"
 }

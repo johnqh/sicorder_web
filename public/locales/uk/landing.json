@@ -1,118 +1,117 @@
 {
   "seo": {
-    "title": "sicorder — Record just part of a web page as video",
-    "description": "sicorder is a Chrome extension for web developers and marketers: pick an element, press Record, and get an MP4 of exactly that part of the page. No full-screen capture, no cropping, no trimming.",
+    "title": "sicorder — Записуйте лише частину веб-сторінки у форматі відео",
+    "description": "sicorder — це розширення Chrome для веб-розробників та маркетологів: виберіть елемент, натисніть «Записати» та отримайте MP4-файл, що містить лише обрану частину сторінки. Без захоплення всього екрана, без обрізання та без редагування.",
     "keywords": [
       "sicorder",
-      "Chrome extension",
-      "record part of screen",
-      "element recorder",
-      "record web page section",
-      "crop screen recording",
+      "розширення Chrome",
+      "записати частину екрана",
+      "реєстратор елементів",
+      "розділ веб-сторінки",
+      "запис екрана врожаю",
       "MP4",
-      "product demo video",
-      "bug report video"
+      "відеодемо продукту",
+      "відео звіту про помилку"
     ]
   },
   "hero": {
-    "title": "Record just the part of the web page you need",
-    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element. No full-screen capture, no cropping, no trimming.",
-    "cta": "Get sicorder for Chrome",
-    "ctaSoon": "Coming soon to the Chrome Web Store",
-    "note": "Free · Runs entirely in your browser"
+    "title": "Записуйте лише ту частину веб-сторінки, яка вам потрібна",
+    "subtitle": "Виберіть елемент, натисніть «Записати» та отримайте MP4-файл, що містить лише цей елемент. Без повноекранного захоплення, без обрізання та без скорочення.",
+    "cta": "Отримайте sicorder для Chrome",
+    "ctaSoon": "Незабаром у Chrome Web Store",
+    "note": "Безкоштовно · Працює повністю у вашому браузері"
   },
   "problem": {
-    "title": "Stop recording your whole screen just to show one part of it",
-    "text": "When you need a clip of one component, an animated chart, a form flow or a new feature, the usual routine is to record the full screen, crop it in a video editor, trim the dead time and export again. sicorder skips all of that: the video contains exactly the part you picked, and nothing else."
+    "title": "Перестаньте записувати весь екран лише для того, щоб показати його частину",
+    "text": "Коли вам потрібен фрагмент одного компонента, анімована діаграма, форма потоку або нова функція, звичайний процес полягає в тому, щоб записати весь екран, обрізати його у відеоредакторі, обрізати час простою та експортувати знову. sicorder пропускає все це: відео містить лише ту частину, яку ви вибрали, і нічого більше."
   },
   "howItWorks": {
-    "title": "How it works",
+    "title": "Як це працює",
     "steps": {
       "pick": {
-        "title": "Pick a region",
-        "text": "Click the sicorder icon, turn on Pick Region and click the element you want. It highlights as you hover, like the element picker in DevTools, and a dotted border marks your choice."
+        "title": "Виберіть область",
+        "text": "Натисніть значок sicorder, увімкніть «Вибір регіону» та натисніть на потрібний елемент. Він підсвічується при наведенні, як у інструменті вибору елементів DevTools, а пунктирна рамка позначає ваш вибір."
       },
       "record": {
-        "title": "Record",
-        "text": "Press Record and use the page as usual. Only the picked element ends up in the video."
+        "title": "Запис",
+        "text": "Натисніть «Записати» та використовуйте сторінку як зазвичай. У відео потрапить лише обраний елемент."
       },
       "stop": {
-        "title": "Stop",
-        "text": "Press Stop. The MP4 lands in your Downloads folder."
+        "title": "Зупинка",
+        "text": "Натисніть «Стоп». Файл MP4 збережеться у папці «Завантаження»."
       }
     }
   },
   "features": {
-    "title": "Why it saves time",
+    "title": "Чому це економить час",
     "items": {
       "exact": {
-        "title": "Exactly the element, no cropping",
-        "text": "The video matches the element's bounds pixel for pixel, at your display's full resolution."
+        "title": "Точно той самий елемент, без обрізки",
+        "text": "Відео точно відповідає границям елемента піксель у піксель при повному розширенні вашого дисплея."
       },
       "smart": {
-        "title": "No dead time to trim",
-        "text": "With Smart recording on, sicorder stops adding frames after half a second without any visual change and picks up again when something moves."
+        "title": "Немає мертвого часу на обрізку",
+        "text": "За умови увімкненої функції Smart recording, sicorder припиняє додавання кадрів через пів секунди після відсутності візуальних змін і знову починає їх записувати, коли щось рухається."
       },
       "pause": {
-        "title": "Pauses when you look away",
-        "text": "Scroll the element out of view or switch tabs and recording pauses, so the gap never shows up in the video."
+        "title": "Пауза, коли ви відвертаєтесь",
+        "text": "Прокрутіть елемент за межі видимості або переключіть вкладки, і запис зупиниться, тому проміжок ніколи не відобразиться у відео."
       },
       "autoStop": {
-        "title": "Stops on its own",
-        "text": "If the element disappears or the page navigates away, sicorder stops, saves what it recorded and tells you why."
+        "title": "Зупиняється самостійно",
+        "text": "Якщо елемент зникає або сторінка переходить в інше місце, sicorder зупиняється, зберігає те, що він записав, і повідомляє вам, чому."
       },
       "names": {
-        "title": "Files you can find later",
-        "text": "Recordings are named after the site, the element and the date, like github_pull_request_2026_09_14.mp4."
+        "title": "Файли, які ви можете знайти пізніше",
+        "text": "Записи названі за сайтом, елементом та датою, наприклад, github_pull_request_2026_09_14.mp4."
       },
       "share": {
-        "title": "Ready to share",
-        "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
+        "title": "Готовий поділитися",
+        "text": "MP4 (H.264) відтворюється в Slack, документах, запитах на злиття, електронній пошті та будь-якому відеоплеєрі."
       }
     }
   },
   "audiences": {
-    "title": "Built for",
+    "title": "Для кого",
     "items": {
       "developers": {
-        "title": "Web developers",
-        "text": "Attach a clip of a bug or a finished feature to a pull request or issue, without anything else on your screen in the frame."
+        "title": "веб-розробники",
+        "text": "Додайте знімок екрана помилки або готової функції до запиту на витягування або завдання, не показуючи на кадрі нічого іншого."
       },
       "designers": {
-        "title": "Designers and product managers",
-        "text": "Capture a single component or interaction for a spec, a review or a changelog."
+        "title": "Дизайнери та менеджери продуктів",
+        "text": "Зафіксуйте один компонент або взаємодію для специфікації, огляду або журналу змін."
       },
       "marketers": {
-        "title": "Marketers",
-        "text": "Record clean product clips for landing pages, social posts and launch announcements, cropped to the part of the app that matters."
+        "title": "Маркетологи",
+        "text": "Записуйте чисті відеоролики продукту для посадкових сторінок, соціальних дописів та анонсів запуску, обрізані до тієї частини додатка, яка має значення."
       },
       "support": {
-        "title": "Support and documentation teams",
-        "text": "Show one widget or one step without the rest of the interface."
+        "title": "Команди підтримки та документації",
+        "text": "Показати один віджет або один крок без решти інтерфейсу."
       }
     }
   },
   "privacy": {
-    "title": "Private by design",
-    "text": "Recording and encoding happen entirely in your browser. sicorder doesn't upload your recordings, doesn't collect analytics and doesn't need an account. Videos go straight to your Downloads folder."
+    "title": "Конфіденційність за замовчуванням",
+    "text": "Запис і кодування відбуваються повністю у вашому браузері. sicorder не завантажує ваші записи, не збирає аналітику і не потребує облікового запису. Відео зберігаються безпосередньо у вашій папці \"Завантаження\"."
   },
   "goodToKnow": {
-    "title": "Good to know",
+    "title": "Корисно знати",
     "items": {
-      "pages": "Works on regular web pages (http and https). Chrome doesn't allow extensions to record its own pages, such as chrome:// settings or the Web Store.",
-      "audio": "Records video only, no audio.",
-      "pointer": "The mouse pointer appears in the recording when it's over the picked element."
+      "pages": "Працює на звичайних веб-сторінках (http та https). Chrome не дозволяє розширям записувати власні сторінки, такі як chrome:// налаштування або Інтернет-магазин.",
+      "audio": "Записує лише відео, без звуку.",
+      "pointer": "Вказівник миші з'являється у записі, коли він знаходиться над вибраним елементом."
     }
   },
   "contact": {
-    "title": "Questions or feedback?",
-    "subtitle": "We'd love to hear how you use sicorder."
+    "title": "Питання або відгуки?",
+    "subtitle": "Ми б хотіли почути, як ви використовуєте sicorder."
   },
   "footer": {
-    "product": "Product",
-    "company": "Sudobility",
-    "description": "sicorder records just the part of a web page you pick, as an MP4.",
-    "chromeWebStore": "Chrome Web Store"
+    "product": "Продукт",
+    "description": "sicorder записує лише ту частину веб-сторінки, яку ви обираєте, у форматі MP4.",
+    "chromeWebStore": "Інтернет-магазин Chrome"
   },
-  "breadcrumbHome": "Home"
+  "breadcrumbHome": "Головна"
 }

@@ -1,118 +1,117 @@
 {
   "seo": {
-    "title": "sicorder — Record just part of a web page as video",
-    "description": "sicorder is a Chrome extension for web developers and marketers: pick an element, press Record, and get an MP4 of exactly that part of the page. No full-screen capture, no cropping, no trimming.",
+    "title": "sicorder — 僅將網頁的部分內容錄製為影片",
+    "description": "sicorder 是一款針對網頁開發人員和行銷人員的 Chrome 擴充功能：選取元素、按下「記錄」，即可獲得該頁面特定部分的 MP4 影片。無需全螢幕擷取、無需裁切、無需剪輯。",
     "keywords": [
       "sicorder",
-      "Chrome extension",
-      "record part of screen",
-      "element recorder",
-      "record web page section",
-      "crop screen recording",
+      "Chrome 擴充功能",
+      "錄製螢幕的一部分",
+      "元素記錄器",
+      "網頁部分",
+      "螢幕錄製",
       "MP4",
-      "product demo video",
-      "bug report video"
+      "產品示範影片",
+      "錯誤報告影片"
     ]
   },
   "hero": {
-    "title": "Record just the part of the web page you need",
-    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element. No full-screen capture, no cropping, no trimming.",
-    "cta": "Get sicorder for Chrome",
-    "ctaSoon": "Coming soon to the Chrome Web Store",
-    "note": "Free · Runs entirely in your browser"
+    "title": "僅記錄您需要的網頁部分",
+    "subtitle": "選擇一個元素，按下「錄製」，即可獲得該元素的 MP4 影片。無需全螢幕擷取，無需裁切，無需修剪。",
+    "cta": "取得 Chrome 的 sicorder",
+    "ctaSoon": "即將上架 Chrome 網路商店",
+    "note": "免費 · 完全在您的瀏覽器中運行"
   },
   "problem": {
-    "title": "Stop recording your whole screen just to show one part of it",
-    "text": "When you need a clip of one component, an animated chart, a form flow or a new feature, the usual routine is to record the full screen, crop it in a video editor, trim the dead time and export again. sicorder skips all of that: the video contains exactly the part you picked, and nothing else."
+    "title": "不要為了顯示一部分內容而錄製整個螢幕",
+    "text": "當您需要單一元件的片段、動畫圖表、表單流程或新功能時，常規做法是錄製整個螢幕，在影片編輯器中裁剪，剪掉多餘的時間，然後再次匯出。sicorder 跳過了所有這些步驟：影片僅包含您選取的內容，沒有其他多餘部分。"
   },
   "howItWorks": {
-    "title": "How it works",
+    "title": "運作方式",
     "steps": {
       "pick": {
-        "title": "Pick a region",
-        "text": "Click the sicorder icon, turn on Pick Region and click the element you want. It highlights as you hover, like the element picker in DevTools, and a dotted border marks your choice."
+        "title": "選擇區域",
+        "text": "點擊 sicorder 圖示，開啟「選取區域」並點擊您想要的元素。當您游標懸停時，它會像開發工具中的元素選擇器一樣高亮顯示，並以虛線框標記您的選擇。"
       },
       "record": {
-        "title": "Record",
-        "text": "Press Record and use the page as usual. Only the picked element ends up in the video."
+        "title": "錄製",
+        "text": "按下錄製按鈕，然後正常使用頁面。只有選定的元素會出現在影片中。"
       },
       "stop": {
-        "title": "Stop",
-        "text": "Press Stop. The MP4 lands in your Downloads folder."
+        "title": "停止",
+        "text": "點擊停止。MP4 檔案將儲存到您的下載資料夾中。"
       }
     }
   },
   "features": {
-    "title": "Why it saves time",
+    "title": "為什麼節省時間",
     "items": {
       "exact": {
-        "title": "Exactly the element, no cropping",
-        "text": "The video matches the element's bounds pixel for pixel, at your display's full resolution."
+        "title": "完全相同的元素，無裁切",
+        "text": "影片與元素的邊界在像素級別完全匹配，且以您顯示器的全解析度顯示。"
       },
       "smart": {
-        "title": "No dead time to trim",
-        "text": "With Smart recording on, sicorder stops adding frames after half a second without any visual change and picks up again when something moves."
+        "title": "無需修剪死區時間",
+        "text": "開啟智慧錄影後，sicorder 在畫面半秒內無任何視覺變化時會停止新增影格，並在偵測到移動時繼續錄影。"
       },
       "pause": {
-        "title": "Pauses when you look away",
-        "text": "Scroll the element out of view or switch tabs and recording pauses, so the gap never shows up in the video."
+        "title": "當你移開視線時暫停",
+        "text": "將元素捲出視窗外或切換分頁，錄音就會暫停，這樣影片中就看不到這段空白。"
       },
       "autoStop": {
-        "title": "Stops on its own",
-        "text": "If the element disappears or the page navigates away, sicorder stops, saves what it recorded and tells you why."
+        "title": "自動停止",
+        "text": "如果元素消失或頁面導航離開，sicorder 會停止、儲存已記錄的內容，並告知原因。"
       },
       "names": {
-        "title": "Files you can find later",
-        "text": "Recordings are named after the site, the element and the date, like github_pull_request_2026_09_14.mp4."
+        "title": "您稍後可找到的檔案",
+        "text": "錄音檔案以站點、元素和日期命名，例如 github_pull_request_2026_09_14.mp4。"
       },
       "share": {
-        "title": "Ready to share",
-        "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
+        "title": "準備分享",
+        "text": "MP4 (H.264) 可在 Slack、文件、拉取請求、電子郵件以及所有影片播放器中播放。"
       }
     }
   },
   "audiences": {
-    "title": "Built for",
+    "title": "適用對象",
     "items": {
       "developers": {
-        "title": "Web developers",
-        "text": "Attach a clip of a bug or a finished feature to a pull request or issue, without anything else on your screen in the frame."
+        "title": "Web 開發人員",
+        "text": "將錯誤的截圖或已完成的功能附加到拉取請求或問題中，且畫面框架內不要有其他內容。"
       },
       "designers": {
-        "title": "Designers and product managers",
-        "text": "Capture a single component or interaction for a spec, a review or a changelog."
+        "title": "設計師和產品經理",
+        "text": "為規範、評審或更新日誌捕獲單個元件或互動。"
       },
       "marketers": {
-        "title": "Marketers",
-        "text": "Record clean product clips for landing pages, social posts and launch announcements, cropped to the part of the app that matters."
+        "title": "行銷人員",
+        "text": "為落地頁、社群貼文及發布公告錄製精簡的產品影片，並裁剪至應用程式中最重要的部分。"
       },
       "support": {
-        "title": "Support and documentation teams",
-        "text": "Show one widget or one step without the rest of the interface."
+        "title": "支援和文件團隊",
+        "text": "僅顯示一個組件或一個步驟，不顯示其餘介面。"
       }
     }
   },
   "privacy": {
-    "title": "Private by design",
-    "text": "Recording and encoding happen entirely in your browser. sicorder doesn't upload your recordings, doesn't collect analytics and doesn't need an account. Videos go straight to your Downloads folder."
+    "title": "以隱私為設計核心",
+    "text": "錄音和編碼完全在您的瀏覽器中進行。sicorder 不會上傳您的錄音，不會收集分析數據，也不需要帳戶。影片直接存入您的「下載」資料夾。"
   },
   "goodToKnow": {
-    "title": "Good to know",
+    "title": "須知",
     "items": {
-      "pages": "Works on regular web pages (http and https). Chrome doesn't allow extensions to record its own pages, such as chrome:// settings or the Web Store.",
-      "audio": "Records video only, no audio.",
-      "pointer": "The mouse pointer appears in the recording when it's over the picked element."
+      "pages": "適用於一般網頁（http 和 https）。Chrome 不允許擴充功能記錄其自身的頁面，例如 chrome:// 設定或網路商店。",
+      "audio": "僅錄製影片，無音訊。",
+      "pointer": "當滑鼠指標位於所選元素上方時，它會在錄製中顯示。"
     }
   },
   "contact": {
-    "title": "Questions or feedback?",
-    "subtitle": "We'd love to hear how you use sicorder."
+    "title": "有任何問題或意見嗎？",
+    "subtitle": "我們很想知道您如何使用 sicorder。"
   },
   "footer": {
-    "product": "Product",
-    "company": "Sudobility",
-    "description": "sicorder records just the part of a web page you pick, as an MP4.",
-    "chromeWebStore": "Chrome Web Store"
+    "product": "產品",
+    "description": "sicorder 僅記錄您選擇的網頁部分，格式為 MP4。",
+    "chromeWebStore": "Chrome 網路商店"
   },
-  "breadcrumbHome": "Home"
+  "breadcrumbHome": "首頁"
 }

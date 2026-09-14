@@ -1,118 +1,117 @@
 {
   "seo": {
-    "title": "sicorder — Record just part of a web page as video",
-    "description": "sicorder is a Chrome extension for web developers and marketers: pick an element, press Record, and get an MP4 of exactly that part of the page. No full-screen capture, no cropping, no trimming.",
+    "title": "sicorder: Graba solo una parte de una página web como video",
+    "description": "sicorder es una extensión de Chrome para desarrolladores web y expertos en marketing: selecciona un elemento, presiona Grabar y obtén un MP4 de exactamente esa parte de la página. Sin captura de pantalla completa, sin recorte ni ajuste.",
     "keywords": [
       "sicorder",
-      "Chrome extension",
-      "record part of screen",
-      "element recorder",
-      "record web page section",
-      "crop screen recording",
+      "extensión de Chrome",
+      "grabar parte de la pantalla",
+      "registrador de elementos",
+      "grabar sección de página web",
+      "grabación de pantalla de la cosecha",
       "MP4",
-      "product demo video",
-      "bug report video"
+      "video de demostración del producto",
+      "video de informe de error"
     ]
   },
   "hero": {
-    "title": "Record just the part of the web page you need",
-    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element. No full-screen capture, no cropping, no trimming.",
-    "cta": "Get sicorder for Chrome",
-    "ctaSoon": "Coming soon to the Chrome Web Store",
-    "note": "Free · Runs entirely in your browser"
+    "title": "Graba solo la parte de la página web que necesitas",
+    "subtitle": "Seleccione un elemento, presione Grabar y obtenga un MP4 exactamente de ese elemento. Sin captura de pantalla completa, sin recorte, sin recorte.",
+    "cta": "Obtener sicorder para Chrome",
+    "ctaSoon": "Próximamente en la Chrome Web Store",
+    "note": "Gratis · Se ejecuta completamente en su navegador"
   },
   "problem": {
-    "title": "Stop recording your whole screen just to show one part of it",
-    "text": "When you need a clip of one component, an animated chart, a form flow or a new feature, the usual routine is to record the full screen, crop it in a video editor, trim the dead time and export again. sicorder skips all of that: the video contains exactly the part you picked, and nothing else."
+    "title": "Deja de grabar toda tu pantalla solo para mostrar una parte de ella.",
+    "text": "Cuando necesitas un clip de un componente, un gráfico animado, un flujo de formulario o una nueva función, el procedimiento habitual es grabar la pantalla completa, recortarla en un editor de vídeo, recortar el tiempo muerto y exportar de nuevo. sicorder omite todo eso: el vídeo contiene exactamente la parte que seleccionaste, y nada más."
   },
   "howItWorks": {
-    "title": "How it works",
+    "title": "Cómo funciona",
     "steps": {
       "pick": {
-        "title": "Pick a region",
-        "text": "Click the sicorder icon, turn on Pick Region and click the element you want. It highlights as you hover, like the element picker in DevTools, and a dotted border marks your choice."
+        "title": "Elige una zona",
+        "text": "Haz clic en el icono de sicorder, activa \"Seleccionar región\" y haz clic en el elemento que desees. Se resaltará al pasar el cursor, como el selector de elementos en las herramientas de desarrollo, y un borde punteado marcará tu selección."
       },
       "record": {
-        "title": "Record",
-        "text": "Press Record and use the page as usual. Only the picked element ends up in the video."
+        "title": "Grabar",
+        "text": "Presione Grabar y use la página con normalidad. Solo el elemento seleccionado aparecerá en el video."
       },
       "stop": {
-        "title": "Stop",
-        "text": "Press Stop. The MP4 lands in your Downloads folder."
+        "title": "Detener",
+        "text": "Presione Detener. El MP4 se guardará en su carpeta Descargas."
       }
     }
   },
   "features": {
-    "title": "Why it saves time",
+    "title": "Por qué ahorra tiempo",
     "items": {
       "exact": {
-        "title": "Exactly the element, no cropping",
-        "text": "The video matches the element's bounds pixel for pixel, at your display's full resolution."
+        "title": "Exactamente el elemento, sin recorte",
+        "text": "El video coincide con los límites del elemento píxel por píxel, a la resolución completa de su pantalla."
       },
       "smart": {
-        "title": "No dead time to trim",
-        "text": "With Smart recording on, sicorder stops adding frames after half a second without any visual change and picks up again when something moves."
+        "title": "Sin tiempo muerto para recortar",
+        "text": "Con la grabación inteligente activada, el sicorder deja de añadir fotogramas después de medio segundo sin cambios visuales y los reanuda cuando se produce un movimiento."
       },
       "pause": {
-        "title": "Pauses when you look away",
-        "text": "Scroll the element out of view or switch tabs and recording pauses, so the gap never shows up in the video."
+        "title": "Se detiene cuando miras away",
+        "text": "Desplaza el elemento fuera de la vista o cambia de pestañas y la grabación se pausa, por lo que la brecha nunca aparece en el vídeo."
       },
       "autoStop": {
-        "title": "Stops on its own",
-        "text": "If the element disappears or the page navigates away, sicorder stops, saves what it recorded and tells you why."
+        "title": "Se detiene por sí mismo",
+        "text": "Si el elemento desaparece o la página navega, sicorder se detiene, guarda lo que grabó y te dice por qué."
       },
       "names": {
-        "title": "Files you can find later",
-        "text": "Recordings are named after the site, the element and the date, like github_pull_request_2026_09_14.mp4."
+        "title": "Archivos que puede encontrar más adelante",
+        "text": "Las grabaciones se nombran según el sitio, el elemento y la fecha, como github_pull_request_2026_09_14.mp4."
       },
       "share": {
-        "title": "Ready to share",
-        "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
+        "title": "Listo para compartir",
+        "text": "MP4 (H.264) se reproduce en Slack, documentos, solicitudes de extracción, correos electrónicos y reproductores de video."
       }
     }
   },
   "audiences": {
-    "title": "Built for",
+    "title": "Pensado para",
     "items": {
       "developers": {
-        "title": "Web developers",
-        "text": "Attach a clip of a bug or a finished feature to a pull request or issue, without anything else on your screen in the frame."
+        "title": "desarrolladores web",
+        "text": "Adjunta un clip de un error o una función finalizada a una solicitud de extracción o incidencia, sin que haya nada más en tu pantalla dentro del encuadre."
       },
       "designers": {
-        "title": "Designers and product managers",
-        "text": "Capture a single component or interaction for a spec, a review or a changelog."
+        "title": "Diseñadores y gerentes de producto",
+        "text": "Capture un único componente o interacción para una especificación, una revisión o un registro de cambios."
       },
       "marketers": {
         "title": "Marketers",
-        "text": "Record clean product clips for landing pages, social posts and launch announcements, cropped to the part of the app that matters."
+        "text": "Graba clips limpios del producto para páginas de destino, publicaciones en redes sociales y anuncios de lanzamiento, recortados a la parte de la aplicación que importa."
       },
       "support": {
-        "title": "Support and documentation teams",
-        "text": "Show one widget or one step without the rest of the interface."
+        "title": "Equipos de soporte y documentación",
+        "text": "Muestre un widget o un paso sin el resto de la interfaz."
       }
     }
   },
   "privacy": {
-    "title": "Private by design",
-    "text": "Recording and encoding happen entirely in your browser. sicorder doesn't upload your recordings, doesn't collect analytics and doesn't need an account. Videos go straight to your Downloads folder."
+    "title": "Privacidad desde el diseño",
+    "text": "La grabación y codificación ocurren completamente en tu navegador. sicorder no sube tus grabaciones, no recopila análisis y no necesita una cuenta. Los videos van directamente a tu carpeta de Descargas."
   },
   "goodToKnow": {
-    "title": "Good to know",
+    "title": "Conviene saber",
     "items": {
-      "pages": "Works on regular web pages (http and https). Chrome doesn't allow extensions to record its own pages, such as chrome:// settings or the Web Store.",
-      "audio": "Records video only, no audio.",
-      "pointer": "The mouse pointer appears in the recording when it's over the picked element."
+      "pages": "Funciona en páginas web normales (http y https). Chrome no permite que las extensiones graben sus propias páginas, como chrome://settings o la Tienda Web.",
+      "audio": "Graba solo video, sin audio.",
+      "pointer": "El puntero del mouse aparece en la grabación cuando está sobre el elemento seleccionado."
     }
   },
   "contact": {
-    "title": "Questions or feedback?",
-    "subtitle": "We'd love to hear how you use sicorder."
+    "title": "¿Preguntas o comentarios?",
+    "subtitle": "Nos encantaría saber cómo utiliza sicorder."
   },
   "footer": {
-    "product": "Product",
-    "company": "Sudobility",
-    "description": "sicorder records just the part of a web page you pick, as an MP4.",
+    "product": "Producto",
+    "description": "sicorder graba solo la parte de una página web que selecciones, como un MP4.",
     "chromeWebStore": "Chrome Web Store"
   },
-  "breadcrumbHome": "Home"
+  "breadcrumbHome": "Inicio"
 }

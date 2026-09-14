@@ -1,23 +1,23 @@
 {
   "home": {
-    "name": "How to record part of a web page as video with sicorder",
-    "description": "Record a single element of a web page to an MP4 using the sicorder Chrome extension.",
+    "name": "Comment enregistrer une partie d'une page web en vidéo avec sicorder",
+    "description": "Enregistrez un élément unique d'une page web en MP4 à l'aide de l'extension Chrome sicorder.",
     "steps": [
       {
-        "name": "Install sicorder",
-        "text": "Add the sicorder extension to Chrome from the Chrome Web Store."
+        "name": "Installer sicorder",
+        "text": "Ajoutez l'extension sicorder à Chrome depuis le Chrome Web Store."
       },
       {
-        "name": "Pick a region",
-        "text": "Click the sicorder toolbar icon, turn on Pick Region, and click the element to record."
+        "name": "Sélectionnez une région",
+        "text": "Cliquez sur l'icône de la barre d'outils sicorder, activez Sélectionner la région, puis cliquez sur l'élément à enregistrer."
       },
       {
-        "name": "Record",
-        "text": "Press Record and interact with the page."
+        "name": "Enregistrer",
+        "text": "Appuyez sur Enregistrer et interagissez avec la page."
       },
       {
-        "name": "Stop and save",
-        "text": "Press Stop. The MP4 is saved to your Downloads folder."
+        "name": "Arrêter et enregistrer",
+        "text": "Cliquez sur Arrêter. Le fichier MP4 est enregistré dans votre dossier Téléchargements."
       }
     ]
   }

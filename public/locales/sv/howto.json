@@ -1,23 +1,23 @@
 {
   "home": {
-    "name": "How to record part of a web page as video with sicorder",
-    "description": "Record a single element of a web page to an MP4 using the sicorder Chrome extension.",
+    "name": "Hur man spelar in en del av en webbsida som video med sicorder",
+    "description": "Spela in ett enskilt element på en webbsida till MP4 med hjälp av sicorder Chrome-tillägget.",
     "steps": [
       {
-        "name": "Install sicorder",
-        "text": "Add the sicorder extension to Chrome from the Chrome Web Store."
+        "name": "Installera sicorder",
+        "text": "Lägg till sicorder-tillägget i Chrome från Chrome Web Store."
       },
       {
-        "name": "Pick a region",
-        "text": "Click the sicorder toolbar icon, turn on Pick Region, and click the element to record."
+        "name": "Välj en region",
+        "text": "Klicka på sicorder-ikonen i verktygsfältet, aktivera Välj region och klicka på elementet att registrera."
       },
       {
-        "name": "Record",
-        "text": "Press Record and interact with the page."
+        "name": "Spela in",
+        "text": "Tryck på Spela in och interagera med sidan."
       },
       {
-        "name": "Stop and save",
-        "text": "Press Stop. The MP4 is saved to your Downloads folder."
+        "name": "Stoppa och spara",
+        "text": "Stoppa. MP4-filen sparas i din mapp för Nedladdningar."
       }
     ]
   }

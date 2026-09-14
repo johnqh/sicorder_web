@@ -1,118 +1,117 @@
 {
   "seo": {
-    "title": "sicorder — Record just part of a web page as video",
-    "description": "sicorder is a Chrome extension for web developers and marketers: pick an element, press Record, and get an MP4 of exactly that part of the page. No full-screen capture, no cropping, no trimming.",
+    "title": "sicorder — Ghi lại một phần của trang web dưới dạng video",
+    "description": "sicorder là một tiện ích mở rộng Chrome dành cho nhà phát triển web và marketer: chọn một phần tử, nhấn Record, và nhận một video MP4 chính xác của phần đó trên trang. Không ghi toàn màn hình, không cắt xén, không chỉnh sửa.",
     "keywords": [
       "sicorder",
-      "Chrome extension",
-      "record part of screen",
-      "element recorder",
-      "record web page section",
-      "crop screen recording",
+      "tiện ích mở rộng Chrome",
+      "quay lại một phần màn hình",
+      "máy ghi phần tử",
+      "phần trang web",
+      "quay màn hình vụ mùa",
       "MP4",
-      "product demo video",
-      "bug report video"
+      "video giới thiệu sản phẩm",
+      "video báo cáo lỗi"
     ]
   },
   "hero": {
-    "title": "Record just the part of the web page you need",
-    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element. No full-screen capture, no cropping, no trimming.",
-    "cta": "Get sicorder for Chrome",
-    "ctaSoon": "Coming soon to the Chrome Web Store",
-    "note": "Free · Runs entirely in your browser"
+    "title": "Chỉ ghi lại phần của trang web bạn cần",
+    "subtitle": "Chọn một phần tử, nhấn Ghi lại và nhận một file MP4 chứa chính xác phần tử đó. Không ghi toàn màn hình, không cắt xén, không rút ngắn.",
+    "cta": "Tải sicorder cho Chrome",
+    "ctaSoon": "Sắp có trên Chrome Web Store",
+    "note": "Miễn phí · Chạy hoàn toàn trên trình duyệt của bạn"
   },
   "problem": {
-    "title": "Stop recording your whole screen just to show one part of it",
-    "text": "When you need a clip of one component, an animated chart, a form flow or a new feature, the usual routine is to record the full screen, crop it in a video editor, trim the dead time and export again. sicorder skips all of that: the video contains exactly the part you picked, and nothing else."
+    "title": "Đừng ghi lại toàn bộ màn hình chỉ để hiển thị một phần của nó",
+    "text": "Khi bạn cần một đoạn trích của một thành phần, một biểu đồ hoạt hình, một luồng biểu mẫu hoặc một tính năng mới, quy trình thông thường là ghi lại toàn bộ màn hình, cắt nó trong trình chỉnh sửa video, cắt bỏ thời gian chết và xuất lại. sicorder bỏ qua tất cả những điều đó: video chứa chính xác phần bạn đã chọn, và không có gì khác."
   },
   "howItWorks": {
-    "title": "How it works",
+    "title": "Cách hoạt động",
     "steps": {
       "pick": {
-        "title": "Pick a region",
-        "text": "Click the sicorder icon, turn on Pick Region and click the element you want. It highlights as you hover, like the element picker in DevTools, and a dotted border marks your choice."
+        "title": "Chọn vùng",
+        "text": "Nhấp vào biểu tượng sicorder, bật Chọn Vùng và nhấp vào phần tử bạn muốn. Nó sẽ được làm nổi bật khi bạn di chuột, giống như trình chọn phần tử trong Công cụ dành cho nhà phát triển, và một viền nét đứt sẽ đánh dấu lựa chọn của bạn."
       },
       "record": {
-        "title": "Record",
-        "text": "Press Record and use the page as usual. Only the picked element ends up in the video."
+        "title": "Quay",
+        "text": "Nhấn Ghi và sử dụng trang như bình thường. Chỉ phần tử được chọn mới xuất hiện trong video."
       },
       "stop": {
-        "title": "Stop",
-        "text": "Press Stop. The MP4 lands in your Downloads folder."
+        "title": "Dừng",
+        "text": "Nhấn Dừng. Tập tin MP4 sẽ được lưu vào thư mục Tải xuống của bạn."
       }
     }
   },
   "features": {
-    "title": "Why it saves time",
+    "title": "Tại sao nó tiết kiệm thời gian",
     "items": {
       "exact": {
-        "title": "Exactly the element, no cropping",
-        "text": "The video matches the element's bounds pixel for pixel, at your display's full resolution."
+        "title": "Chính xác phần tử đó, không cắt xén",
+        "text": "Video khớp chính xác với các biên của phần tử từng pixel, ở độ phân giải đầy đủ của màn hình của bạn."
       },
       "smart": {
-        "title": "No dead time to trim",
-        "text": "With Smart recording on, sicorder stops adding frames after half a second without any visual change and picks up again when something moves."
+        "title": "Không có thời gian chết để cắt tỉa",
+        "text": "Khi tính năng ghi thông minh được bật, sicorder sẽ ngừng thêm khung hình sau nửa giây không có thay đổi hình ảnh nào và tiếp tục ghi khi có chuyển động."
       },
       "pause": {
-        "title": "Pauses when you look away",
-        "text": "Scroll the element out of view or switch tabs and recording pauses, so the gap never shows up in the video."
+        "title": "Tạm dừng khi bạn nhìn đi chỗ khác",
+        "text": "Cuộn phần tử ra khỏi vùng hiển thị hoặc chuyển tab và bản ghi sẽ tạm dừng, do đó khoảng trống sẽ không xuất hiện trong video."
       },
       "autoStop": {
-        "title": "Stops on its own",
-        "text": "If the element disappears or the page navigates away, sicorder stops, saves what it recorded and tells you why."
+        "title": "Tự dừng lại",
+        "text": "Nếu phần tử biến mất hoặc trang chuyển hướng, sicorder sẽ dừng lại, lưu những gì nó đã ghi lại và cho bạn biết lý do."
       },
       "names": {
-        "title": "Files you can find later",
-        "text": "Recordings are named after the site, the element and the date, like github_pull_request_2026_09_14.mp4."
+        "title": "Các tệp bạn có thể tìm thấy sau này",
+        "text": "Các bản ghi được đặt tên theo trang web, thành phần và ngày, chẳng hạn như github_pull_request_2026_09_14.mp4."
       },
       "share": {
-        "title": "Ready to share",
-        "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
+        "title": "Sẵn sàng chia sẻ",
+        "text": "MP4 (H.264) phát được trên Slack, tài liệu, pull request, email và mọi trình phát video."
       }
     }
   },
   "audiences": {
-    "title": "Built for",
+    "title": "Dành cho",
     "items": {
       "developers": {
-        "title": "Web developers",
-        "text": "Attach a clip of a bug or a finished feature to a pull request or issue, without anything else on your screen in the frame."
+        "title": "nhà phát triển web",
+        "text": "Đính kèm một đoạn video ghi lại lỗi hoặc tính năng đã hoàn thành vào một pull request hoặc issue, mà không có bất kỳ nội dung nào khác trên màn hình trong khung hình."
       },
       "designers": {
-        "title": "Designers and product managers",
-        "text": "Capture a single component or interaction for a spec, a review or a changelog."
+        "title": "Nhà thiết kế và quản lý sản phẩm",
+        "text": "Ghi lại một thành phần hoặc tương tác đơn lẻ cho một đặc tả, đánh giá hoặc nhật ký thay đổi."
       },
       "marketers": {
-        "title": "Marketers",
-        "text": "Record clean product clips for landing pages, social posts and launch announcements, cropped to the part of the app that matters."
+        "title": "Nhà tiếp thị",
+        "text": "Quay các đoạn video sản phẩm sạch cho trang đích, bài đăng mạng xã hội và thông báo ra mắt, được cắt gọn vào phần ứng dụng quan trọng."
       },
       "support": {
-        "title": "Support and documentation teams",
-        "text": "Show one widget or one step without the rest of the interface."
+        "title": "Nhóm hỗ trợ và tài liệu",
+        "text": "Hiển thị một widget hoặc một bước mà không có phần còn lại của giao diện."
       }
     }
   },
   "privacy": {
-    "title": "Private by design",
-    "text": "Recording and encoding happen entirely in your browser. sicorder doesn't upload your recordings, doesn't collect analytics and doesn't need an account. Videos go straight to your Downloads folder."
+    "title": "Quyền riêng tư ngay từ thiết kế",
+    "text": "Quá trình ghi âm và mã hóa diễn ra hoàn toàn trong trình duyệt của bạn. sicorder không tải lên bản ghi của bạn, không thu thập dữ liệu phân tích và cũng không yêu cầu tài khoản. Video được lưu trực tiếp vào thư mục Tải xuống của bạn."
   },
   "goodToKnow": {
-    "title": "Good to know",
+    "title": "Cần biết",
     "items": {
-      "pages": "Works on regular web pages (http and https). Chrome doesn't allow extensions to record its own pages, such as chrome:// settings or the Web Store.",
-      "audio": "Records video only, no audio.",
-      "pointer": "The mouse pointer appears in the recording when it's over the picked element."
+      "pages": "Hoạt động trên các trang web thông thường (http và https). Chrome không cho phép các tiện ích mở rộng ghi lại các trang của chính nó, chẳng hạn như chrome://settings hoặc Cửa hàng Web.",
+      "audio": "Chỉ quay video, không có âm thanh.",
+      "pointer": "Con trỏ chuột xuất hiện trong bản ghi khi nó nằm trên phần tử đã chọn."
     }
   },
   "contact": {
-    "title": "Questions or feedback?",
-    "subtitle": "We'd love to hear how you use sicorder."
+    "title": "Câu hỏi hoặc phản hồi?",
+    "subtitle": "Chúng tôi rất muốn biết cách bạn sử dụng sicorder."
   },
   "footer": {
-    "product": "Product",
-    "company": "Sudobility",
-    "description": "sicorder records just the part of a web page you pick, as an MP4.",
-    "chromeWebStore": "Chrome Web Store"
+    "product": "Sản phẩm",
+    "description": "sicorder chỉ ghi lại phần trang web bạn chọn dưới dạng MP4.",
+    "chromeWebStore": "Cửa hàng Web Chrome"
   },
-  "breadcrumbHome": "Home"
+  "breadcrumbHome": "Trang chủ"
 }

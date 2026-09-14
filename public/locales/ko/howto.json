@@ -1,23 +1,23 @@
 {
   "home": {
-    "name": "How to record part of a web page as video with sicorder",
-    "description": "Record a single element of a web page to an MP4 using the sicorder Chrome extension.",
+    "name": "sicorder로 웹 페이지의 일부를 비디오로 녹화하는 방법",
+    "description": "sicorder Chrome 확장 프로그램을 사용하여 웹 페이지의 단일 요소를 MP4로 기록합니다.",
     "steps": [
       {
-        "name": "Install sicorder",
-        "text": "Add the sicorder extension to Chrome from the Chrome Web Store."
+        "name": "sicorder 설치",
+        "text": "Chrome 웹 스토어에서 Chrome에 sicorder 확장 프로그램을 추가하세요."
       },
       {
-        "name": "Pick a region",
-        "text": "Click the sicorder toolbar icon, turn on Pick Region, and click the element to record."
+        "name": "지역 선택",
+        "text": "도구 모음의 sicorder 아이콘을 클릭하고 영역 선택을 켠 다음 기록할 요소를 클릭합니다."
       },
       {
-        "name": "Record",
-        "text": "Press Record and interact with the page."
+        "name": "녹음",
+        "text": "녹음을 시작하고 페이지와 상호작용하세요."
       },
       {
-        "name": "Stop and save",
-        "text": "Press Stop. The MP4 is saved to your Downloads folder."
+        "name": "중지 및 저장",
+        "text": "중지를 누르세요. MP4 파일이 다운로드 폴더에 저장됩니다."
       }
     ]
   }

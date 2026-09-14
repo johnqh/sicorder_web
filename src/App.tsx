@@ -113,7 +113,7 @@ function Layout() {
   const footerLinkSections = [
     { title: t('footer.product'), links: productLinks },
     {
-      title: t('footer.company'),
+      title: CONSTANTS.COMPANY_NAME,
       links: [
         { label: 'sudobility.com', href: `https://sudobility.com/${currentLang}` },
         { label: CONSTANTS.SUPPORT_EMAIL, href: `mailto:${CONSTANTS.SUPPORT_EMAIL}` },
