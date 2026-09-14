@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <title>{{VITE_APP_NAME}} — Record just part of a web page as video</title>
+    <meta
+      name="description"
+      content="{{VITE_APP_NAME}} is a Chrome extension that records just the element you pick on a web page and saves it as an MP4. No full-screen capture, no cropping, no trimming."
+    />
+    <meta name="author" content="{{VITE_COMPANY_NAME}}" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="application-name" content="{{VITE_APP_NAME}}" />
+    <meta name="theme-color" content="#0F172A" />
+
+    <!-- og:url, canonical and hreflang are per-route: written by the SEO generator. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{VITE_APP_NAME}} — Record just part of a web page as video" />
+    <meta
+      property="og:description"
+      content="A Chrome extension that records just the element you pick on a web page, as an MP4."
+    />
+    <meta property="og:image" content="https://{{VITE_APP_DOMAIN}}/og-image.png" />
+    <meta property="og:site_name" content="{{VITE_APP_NAME}}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://{{VITE_APP_DOMAIN}}/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "{{VITE_APP_NAME}}",
+        "url": "https://{{VITE_APP_DOMAIN}}",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Chrome",
+        "dateModified": "{{TODAY}}",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{VITE_COMPANY_NAME}}",
+          "email": "{{VITE_SUPPORT_EMAIL}}"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

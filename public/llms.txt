@@ -1,0 +1,12 @@
+# sicorder
+
+> A Chrome extension that records just the part of a web page you pick, as an MP4.
+
+## Overview
+sicorder is for web developers, designers and marketers who need a clip of one part of a web app. Instead of recording the whole screen and cropping and trimming in a video editor, you pick an element, press Record, and get an MP4 of exactly that element in your Downloads folder. It pauses while the element is out of view or the tab is in the background, can skip stretches with no visual change, and stops on its own if the element disappears. Everything runs in the browser; nothing is uploaded.
+
+## Key Pages
+- `/:lang` - Localized homepage (en, de, es, fr, it, ja, ko, pt, ru, sv, th, uk, vi, zh, zh-hant)
+
+## Contact
+info@sudobility.com
