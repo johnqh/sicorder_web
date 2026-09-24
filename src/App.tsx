@@ -1,5 +1,14 @@
 import { Suspense, useEffect, useMemo, type ReactNode } from 'react';
-import { Link, Navigate, Outlet, Route, Routes, useNavigate, useParams } from 'react-router-dom';
+import {
+  Link,
+  Navigate,
+  Outlet,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+  useParams,
+} from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
   AppBreadcrumbs,
@@ -19,6 +28,8 @@ import Features from './components/Features';
 import Audiences from './components/Audiences';
 import PrivacySection from './components/PrivacySection';
 import ContactSection from './components/ContactSection';
+import PrivacyPolicyPage from './components/PrivacyPolicyPage';
+import SupportPage from './components/SupportPage';
 
 const LANGUAGE_FLAGS: Record<SupportedLanguage, string> = {
   en: '🇺🇸',
@@ -82,13 +93,14 @@ function LoadingFallback() {
 
 function Layout() {
   const { lang } = useParams<{ lang: string }>();
+  const location = useLocation();
   const { i18n: i18nInstance, t } = useTranslation();
   const navigate = useNavigate();
 
   useEffect(() => {
     if (isSupported(lang)) {
       if (i18nInstance.language !== lang) void i18nInstance.changeLanguage(lang);
-    } else {
+    } else if (lang !== undefined) {
       navigate('/en', { replace: true });
     }
   }, [lang, i18nInstance, navigate]);
@@ -117,6 +129,8 @@ function Layout() {
       links: [
         { label: 'sudobility.com', href: `https://sudobility.com/${currentLang}` },
         { label: CONSTANTS.SUPPORT_EMAIL, href: `mailto:${CONSTANTS.SUPPORT_EMAIL}` },
+        { label: 'Privacy Policy', href: '/privacy' },
+        { label: 'Support', href: '/support' },
       ],
     },
   ];
@@ -140,7 +154,18 @@ function Layout() {
             LinkComponent={LinkWrapper}
           />
           <AppBreadcrumbs
-            items={[{ label: t('breadcrumbHome'), href: `/${currentLang}`, current: true }]}
+            items={
+              location.pathname.endsWith('/privacy') || location.pathname.endsWith('/support')
+                ? [
+                    { label: t('breadcrumbHome'), href: `/${currentLang}` },
+                    {
+                      label: location.pathname.endsWith('/privacy') ? 'Privacy Policy' : 'Support',
+                      href: location.pathname,
+                      current: true,
+                    },
+                  ]
+                : [{ label: t('breadcrumbHome'), href: `/${currentLang}`, current: true }]
+            }
             shareConfig={{
               title: `${CONSTANTS.APP_NAME} — ${t('hero.title')}`,
               description: t('footer.description'),
@@ -208,6 +233,14 @@ function AppRoutes() {
       <Routes>
         <Route path="/:lang" element={<Layout />}>
           <Route index element={<LandingPage />} />
+          <Route path="privacy" element={<PrivacyPolicyPage />} />
+          <Route path="support" element={<SupportPage />} />
+        </Route>
+        <Route path="/privacy" element={<Layout />}>
+          <Route index element={<PrivacyPolicyPage />} />
+        </Route>
+        <Route path="/support" element={<Layout />}>
+          <Route index element={<SupportPage />} />
         </Route>
         <Route path="/" element={<Navigate to={`/${initial}`} replace />} />
         <Route path="*" element={<Navigate to="/en" replace />} />

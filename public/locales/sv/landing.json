@@ -76,6 +76,10 @@
       "scroll": {
         "title": "Rullningen sköts åt dig",
         "text": "I Still-läget rullas elementet först fram, sedan återgår sidan dit den var."
+      },
+      "audio": {
+        "title": "Lägg till appens ljud eller berättarröst",
+        "text": "Spela in ljud från den aktiva fliken, mikrofonen eller båda. Ljud är valfritt och tas bara med när du aktiverar det."
       }
     }
   },
@@ -110,7 +114,8 @@
       "pages": "Verkar på vanliga webbsidor (http och https). Chrome tillåter inte att tillägg registrerar sina egna sidor, såsom chrome://-inställningar eller Webbutiken.",
       "audio": "Spelar in video endast, ingen ljud.",
       "pointer": "Muspekaren visas i inspelningen när den är över det valda elementet."
-    }
+    },
+    "audio": "Ljud är valfritt: spela in ljud från den aktiva fliken, mikrofonen eller båda."
   },
   "contact": {
     "title": "Frågor eller feedback?",

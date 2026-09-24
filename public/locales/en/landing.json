@@ -1,32 +1,34 @@
 {
   "seo": {
-    "title": "sicorder — Record just part of a web page as video",
-    "description": "sicorder is a Chrome extension for web developers and marketers: pick an element, press Record, and get an MP4 of exactly that part of the page. No full-screen capture, no cropping, no trimming.",
+    "title": "Partial Video Recording for Web Apps | Sicorder",
+    "description": "Sicorder is a Chrome extension for partial video recording. Record one webpage area for product demos, tutorials, or marketing, with optional audio.",
     "keywords": [
       "sicorder",
       "Chrome extension",
+      "partial video recording",
+      "partial screen recording",
       "record part of screen",
-      "element recorder",
-      "record web page section",
-      "crop screen recording",
-      "MP4",
+      "record part of a webpage",
+      "Chrome extension screen recorder",
+      "webpage element recorder",
       "product demo video",
-      "bug report video"
+      "software tutorial recording",
+      "marketing video recording"
     ]
   },
   "hero": {
-    "title": "Record just the part of the web page you need",
-    "subtitle": "Pick an element, press Record, and get an MP4 of exactly that element, or save it as a PNG. No full-screen capture, no cropping, no trimming.",
+    "title": "Partial video recording for focused app demos",
+    "subtitle": "Record one chart, panel, or interaction from a webpage as an MP4, or save it as a PNG. Add tab audio, microphone narration, or both.",
     "cta": "Get sicorder for Chrome",
     "ctaSoon": "Coming soon to the Chrome Web Store",
     "note": "Free · Runs entirely in your browser"
   },
   "problem": {
-    "title": "Stop recording your whole screen just to show one part of it",
-    "text": "When you need a clip of one component, an animated chart, a form flow or a new feature, the usual routine is to record the full screen, crop it in a video editor, trim the dead time and export again. sicorder skips all of that: the video contains exactly the part you picked, and nothing else."
+    "title": "Record one area of a large app—not the whole screen",
+    "text": "For a product demo, tutorial, or marketing video, viewers need to see the feature—not the entire dashboard. Typical screen recording captures the whole browser; then you crop, trim, and export. If the detail you need occupied a small part of the original frame, enlarging it from compressed footage can soften text and controls. Sicorder is a Chrome extension for partial screen recording: select a webpage element, and the saved MP4 is framed to that area. That removes the separate crop-and-export step. The MP4 is still encoded video, but you avoid upscaling and re-encoding a crop after recording."
   },
   "howItWorks": {
-    "title": "How it works",
+    "title": "Record part of a webpage in three steps",
     "steps": {
       "pick": {
         "title": "Pick a region",
@@ -46,8 +48,8 @@
     "title": "Why it saves time",
     "items": {
       "exact": {
-        "title": "Exactly the element, no cropping",
-        "text": "The video matches the element's bounds pixel for pixel, at your display's full resolution."
+        "title": "A focused recording, without post-record cropping",
+        "text": "The saved video is framed to the selected webpage element. You avoid enlarging a small crop from a full-window recording; the MP4 is encoded as it is saved."
       },
       "smart": {
         "title": "No dead time to trim",
@@ -69,6 +71,10 @@
         "title": "Ready to share",
         "text": "MP4 (H.264) plays in Slack, docs, pull requests, email and every video player."
       },
+      "audio": {
+        "title": "Add app audio or narration",
+        "text": "Record sound from the active tab, your microphone, or both. Audio is optional and only included when you turn it on."
+      },
       "still": {
         "title": "Screenshots too",
         "text": "Switch to Still, click an element, and a pixel-exact PNG of just that element lands in Downloads, without the mouse pointer."
@@ -84,15 +90,15 @@
     "items": {
       "developers": {
         "title": "Web developers",
-        "text": "Attach a clip of a bug or a finished feature to a pull request or issue, without anything else on your screen in the frame."
+        "text": "Show a bug, interaction, or finished feature in a pull request or issue, with only the relevant part of the page in frame."
       },
       "designers": {
         "title": "Designers and product managers",
-        "text": "Capture a single component or interaction for a spec, a review or a changelog."
+        "text": "Record a focused walkthrough of a component or interaction for a design review, product spec, or tutorial."
       },
       "marketers": {
         "title": "Marketers",
-        "text": "Record clean product clips for landing pages, social posts and launch announcements, cropped to the part of the app that matters."
+        "text": "Make product demos, tutorial clips, and launch videos that focus on the feature you want viewers to notice. Add app audio, voice-over, or both."
       },
       "support": {
         "title": "Support and documentation teams",
@@ -102,13 +108,13 @@
   },
   "privacy": {
     "title": "Private by design",
-    "text": "Recording and encoding happen entirely in your browser, and videos go straight to your Downloads folder. sicorder never uploads your recordings and never sends page content, URLs or file names. It sends anonymous usage statistics, such as how many recordings are started and saved, so we can improve it. No account needed."
+    "text": "Recording and encoding happen in your browser, and videos go straight to your Downloads folder. If you enable audio, Sicorder records sound from the active tab, your selected microphone, or both, and mixes it into the video locally. Your recordings are never uploaded, and page content, URLs, and file names are never sent. Sicorder sends anonymous usage statistics, such as how many recordings are started and saved. No account needed."
   },
   "goodToKnow": {
     "title": "Good to know",
     "items": {
       "pages": "Works on regular web pages (http and https). Chrome doesn't allow extensions to record its own pages, such as chrome:// settings or the Web Store.",
-      "audio": "Records video only, no audio.",
+      "audio": "Audio is optional: record sound from the active tab, your microphone, or both.",
       "pointer": "The mouse pointer appears in the recording when it's over the picked element."
     }
   },
@@ -118,7 +124,7 @@
   },
   "footer": {
     "product": "Product",
-    "description": "sicorder records just the part of a web page you pick, as an MP4.",
+    "description": "Partial video recording for product demos, tutorials, and marketing: capture one webpage area as an MP4, with optional audio.",
     "chromeWebStore": "Chrome Web Store"
   },
   "breadcrumbHome": "Home"

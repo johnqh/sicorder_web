@@ -76,6 +76,10 @@
       "scroll": {
         "title": "Nos ocupamos del desplazamiento",
         "text": "En el modo Still, el elemento se desplaza primero a la vista y luego la página vuelve a donde estaba."
+      },
+      "audio": {
+        "title": "Añade el audio de la app o una narración",
+        "text": "Graba el sonido de la pestaña activa, tu micrófono o ambos. El audio es opcional y solo se incluye cuando lo activas."
       }
     }
   },
@@ -110,7 +114,8 @@
       "pages": "Funciona en páginas web normales (http y https). Chrome no permite que las extensiones graben sus propias páginas, como chrome://settings o la Tienda Web.",
       "audio": "Graba solo video, sin audio.",
       "pointer": "El puntero del mouse aparece en la grabación cuando está sobre el elemento seleccionado."
-    }
+    },
+    "audio": "El audio es opcional: graba el sonido de la pestaña activa, tu micrófono o ambos."
   },
   "contact": {
     "title": "¿Preguntas o comentarios?",

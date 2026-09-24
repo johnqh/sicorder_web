@@ -76,6 +76,10 @@
       "scroll": {
         "title": "Allo scorrimento pensiamo noi",
         "text": "In modalità Still l'elemento viene prima portato in vista, poi la pagina torna dov'era."
+      },
+      "audio": {
+        "title": "Aggiungi l’audio dell’app o una narrazione",
+        "text": "Registra l’audio della scheda attiva, del microfono o entrambi. L’audio è facoltativo e viene incluso solo quando lo attivi."
       }
     }
   },
@@ -110,7 +114,8 @@
       "pages": "Funziona sulle pagine web normali (http e https). Chrome non consente alle estensioni di registrare le proprie pagine, come le impostazioni di chrome:// o il Web Store.",
       "audio": "Registra solo video, senza audio.",
       "pointer": "Il puntatore del mouse appare nella registrazione quando si trova sull'elemento selezionato."
-    }
+    },
+    "audio": "L’audio è facoltativo: registra il suono della scheda attiva, del microfono o entrambi."
   },
   "contact": {
     "title": "Domande o feedback?",

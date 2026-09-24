@@ -76,6 +76,10 @@
       "scroll": {
         "title": "Scrollen übernehmen wir",
         "text": "Bei Still-Aufnahmen wird das Element zuerst ins Bild gescrollt, danach springt die Seite an ihre alte Position zurück."
+      },
+      "audio": {
+        "title": "App-Audio oder Kommentar hinzufügen",
+        "text": "Nimm den Ton des aktiven Tabs, dein Mikrofon oder beides auf. Audio ist optional und wird nur aufgenommen, wenn du es einschaltest."
       }
     }
   },
@@ -110,7 +114,8 @@
       "pages": "Funktioniert auf regulären Webseiten (http und https). Chrome erlaubt es Erweiterungen nicht, eigene Seiten wie chrome://settings oder den Web Store aufzuzeichnen.",
       "audio": "Nur Videoaufnahme, kein Ton.",
       "pointer": "Der Mauszeiger wird in der Aufnahme angezeigt, wenn er sich über dem ausgewählten Element befindet."
-    }
+    },
+    "audio": "Audio ist optional: Nimm den Ton des aktiven Tabs, deines Mikrofons oder beides auf."
   },
   "contact": {
     "title": "Fragen oder Feedback?",

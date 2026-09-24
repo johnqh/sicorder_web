@@ -76,6 +76,10 @@
       "scroll": {
         "title": "A rolagem fica por nossa conta",
         "text": "No modo Still, o elemento é trazido para a tela primeiro e depois a página volta para onde estava."
+      },
+      "audio": {
+        "title": "Adicione o áudio do app ou uma narração",
+        "text": "Grave o som da aba ativa, do microfone ou de ambos. O áudio é opcional e só é incluído quando você o ativa."
       }
     }
   },
@@ -110,7 +114,8 @@
       "pages": "Funciona em páginas web regulares (http e https). O Chrome não permite que extensões gravem suas próprias páginas, como as configurações do chrome:// ou a Loja Web.",
       "audio": "Grava apenas vídeo, sem áudio.",
       "pointer": "O ponteiro do mouse aparece na gravação quando está sobre o elemento selecionado."
-    }
+    },
+    "audio": "O áudio é opcional: grave o som da aba ativa, do microfone ou de ambos."
   },
   "contact": {
     "title": "Perguntas ou feedback?",

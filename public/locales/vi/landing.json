@@ -76,6 +76,10 @@
       "scroll": {
         "title": "Tự động cuộn trang",
         "text": "Ở chế độ Still, trang sẽ cuộn để hiện phần tử trước, rồi trở về vị trí cũ."
+      },
+      "audio": {
+        "title": "Thêm âm thanh ứng dụng hoặc lời thuyết minh",
+        "text": "Ghi âm thanh từ tab hiện tại, micrô hoặc cả hai. Âm thanh là tùy chọn và chỉ được đưa vào khi bạn bật."
       }
     }
   },
@@ -110,7 +114,8 @@
       "pages": "Hoạt động trên các trang web thông thường (http và https). Chrome không cho phép các tiện ích mở rộng ghi lại các trang của chính nó, chẳng hạn như chrome://settings hoặc Cửa hàng Web.",
       "audio": "Chỉ quay video, không có âm thanh.",
       "pointer": "Con trỏ chuột xuất hiện trong bản ghi khi nó nằm trên phần tử đã chọn."
-    }
+    },
+    "audio": "Âm thanh là tùy chọn: ghi âm thanh từ tab hiện tại, micrô hoặc cả hai."
   },
   "contact": {
     "title": "Câu hỏi hoặc phản hồi?",

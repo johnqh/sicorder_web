@@ -76,6 +76,10 @@
       "scroll": {
         "title": "Le défilement, on s'en charge",
         "text": "En mode Still, l'élément est d'abord amené à l'écran, puis la page revient là où elle était."
+      },
+      "audio": {
+        "title": "Ajoutez le son de l’application ou une narration",
+        "text": "Enregistrez le son de l’onglet actif, votre microphone ou les deux. L’audio est facultatif et n’est inclus que si vous l’activez."
       }
     }
   },
@@ -110,7 +114,8 @@
       "pages": "Fonctionne sur les pages web régulières (http et https). Chrome ne permet pas aux extensions d'enregistrer ses propres pages, telles que les paramètres chrome:// ou la boutique Web.",
       "audio": "Enregistre uniquement la vidéo, sans audio.",
       "pointer": "Le pointeur de la souris apparaît dans l'enregistrement lorsqu'il se trouve sur l'élément sélectionné."
-    }
+    },
+    "audio": "L’audio est facultatif : enregistrez le son de l’onglet actif, votre microphone ou les deux."
   },
   "contact": {
     "title": "Questions ou retours ?",

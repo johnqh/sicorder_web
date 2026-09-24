@@ -29,6 +29,10 @@ const FEATURES: { key: string; icon: ReactNode }[] = [
       'M8.7 10.7l6.6-3.4M8.7 13.3l6.6 3.4M18 8a3 3 0 100-6 3 3 0 000 6zM6 15a3 3 0 100-6 3 3 0 000 6zm12 7a3 3 0 100-6 3 3 0 000 6z'
     ),
   },
+  {
+    key: 'audio',
+    icon: svg('M12 3v18m0-18a3 3 0 013 3v12a3 3 0 01-6 0V6a3 3 0 013-3zm7 5v8a7 7 0 01-14 0V8'),
+  },
 ];
 
 export default function Features() {
