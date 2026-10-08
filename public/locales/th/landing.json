@@ -126,5 +126,8 @@
     "description": "sicorder บันทึกเฉพาะส่วนของหน้าเว็บที่คุณเลือก เป็นไฟล์ MP4",
     "chromeWebStore": "Chrome เว็บสโตร์"
   },
-  "breadcrumbHome": "หน้าแรก"
+  "breadcrumbHome": "หน้าแรก",
+  "nav": {
+    "docs": "เอกสาร"
+  }
 }

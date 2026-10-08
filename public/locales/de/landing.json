@@ -126,5 +126,8 @@
     "description": "sicorder zeichnet nur den von Ihnen ausgewählten Teil einer Webseite als MP4 auf.",
     "chromeWebStore": "Chrome Web Store"
   },
-  "breadcrumbHome": "Startseite"
+  "breadcrumbHome": "Startseite",
+  "nav": {
+    "docs": "Dokumentation"
+  }
 }

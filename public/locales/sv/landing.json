@@ -126,5 +126,8 @@
     "description": "sicorder sparar bara den del av en webbsida du väljer, som en MP4.",
     "chromeWebStore": "Chrome Web Store"
   },
-  "breadcrumbHome": "Hem"
+  "breadcrumbHome": "Hem",
+  "nav": {
+    "docs": "Dokumentation"
+  }
 }

@@ -126,5 +126,8 @@
     "description": "sicorder chỉ ghi lại phần trang web bạn chọn dưới dạng MP4.",
     "chromeWebStore": "Cửa hàng Web Chrome"
   },
-  "breadcrumbHome": "Trang chủ"
+  "breadcrumbHome": "Trang chủ",
+  "nav": {
+    "docs": "Tài liệu"
+  }
 }

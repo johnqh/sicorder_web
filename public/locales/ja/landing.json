@@ -126,5 +126,8 @@
     "description": "sicorder は、選択したウェブページの一部分を MP4 形式で記録します。",
     "chromeWebStore": "Chrome ウェブストア"
   },
-  "breadcrumbHome": "ホーム"
+  "breadcrumbHome": "ホーム",
+  "nav": {
+    "docs": "ドキュメント"
+  }
 }

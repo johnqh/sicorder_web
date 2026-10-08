@@ -126,5 +126,8 @@
     "description": "sicorder записує лише ту частину веб-сторінки, яку ви обираєте, у форматі MP4.",
     "chromeWebStore": "Інтернет-магазин Chrome"
   },
-  "breadcrumbHome": "Головна"
+  "breadcrumbHome": "Головна",
+  "nav": {
+    "docs": "Документація"
+  }
 }

@@ -126,5 +126,8 @@
     "description": "sicorder registra solo la parte di una pagina web che scegli, come un MP4.",
     "chromeWebStore": "Chrome Web Store"
   },
-  "breadcrumbHome": "Home"
+  "breadcrumbHome": "Home",
+  "nav": {
+    "docs": "Documentazione"
+  }
 }

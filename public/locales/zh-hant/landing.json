@@ -126,5 +126,8 @@
     "description": "sicorder 僅記錄您選擇的網頁部分，格式為 MP4。",
     "chromeWebStore": "Chrome 網路商店"
   },
-  "breadcrumbHome": "首頁"
+  "breadcrumbHome": "首頁",
+  "nav": {
+    "docs": "文件"
+  }
 }

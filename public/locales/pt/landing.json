@@ -126,5 +126,8 @@
     "description": "O sicorder grava apenas a parte da página da web que você seleciona, como um MP4.",
     "chromeWebStore": "Chrome Web Store"
   },
-  "breadcrumbHome": "Início"
+  "breadcrumbHome": "Início",
+  "nav": {
+    "docs": "Documentação"
+  }
 }

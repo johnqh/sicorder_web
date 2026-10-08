@@ -1,7 +1,7 @@
 {
   "name": "sicorder_web",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "process:static": "mkdir -p node_modules/.cache/workflows && curl -fsSL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/process-static-files.ts -o node_modules/.cache/workflows/process-static-files.ts && bunx tsx node_modules/.cache/workflows/process-static-files.ts",

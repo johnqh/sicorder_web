@@ -126,5 +126,8 @@
     "description": "sicorder 仅记录您选择的网页部分，格式为 MP4。",
     "chromeWebStore": "Chrome 网上应用店"
   },
-  "breadcrumbHome": "首页"
+  "breadcrumbHome": "首页",
+  "nav": {
+    "docs": "文档"
+  }
 }

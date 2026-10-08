@@ -127,5 +127,8 @@
     "description": "Partial video recording for product demos, tutorials, and marketing: capture one webpage area as an MP4, with optional audio.",
     "chromeWebStore": "Chrome Web Store"
   },
-  "breadcrumbHome": "Home"
+  "breadcrumbHome": "Home",
+  "nav": {
+    "docs": "Docs"
+  }
 }

@@ -30,6 +30,7 @@ import PrivacySection from './components/PrivacySection';
 import ContactSection from './components/ContactSection';
 import PrivacyPolicyPage from './components/PrivacyPolicyPage';
 import SupportPage from './components/SupportPage';
+import DocsPage, { DOC_TOPICS } from './components/DocsPage';
 
 const LANGUAGE_FLAGS: Record<SupportedLanguage, string> = {
   en: '🇺🇸',
@@ -118,6 +119,7 @@ function Layout() {
   );
 
   const productLinks = [{ label: CONSTANTS.APP_NAME, href: `/${currentLang}` }];
+  productLinks.push({ label: t('nav.docs'), href: `/${currentLang}/docs` });
   if (CONSTANTS.CHROME_STORE_URL) {
     productLinks.push({ label: t('footer.chromeWebStore'), href: CONSTANTS.CHROME_STORE_URL });
   }
@@ -135,6 +137,29 @@ function Layout() {
     },
   ];
 
+  const isDocs =
+    location.pathname === `/${currentLang}/docs` ||
+    location.pathname.startsWith(`/${currentLang}/docs/`);
+  const docsTopic = isDocs
+    ? DOC_TOPICS.find(item => item.slug === location.pathname.split('/')[3])
+    : undefined;
+  const breadcrumbItems = isDocs
+    ? [
+        { label: t('breadcrumbHome'), href: `/${currentLang}` },
+        { label: t('nav.docs'), href: `/${currentLang}/docs`, current: !docsTopic },
+        ...(docsTopic ? [{ label: docsTopic.title, href: location.pathname, current: true }] : []),
+      ]
+    : location.pathname.endsWith('/privacy') || location.pathname.endsWith('/support')
+      ? [
+          { label: t('breadcrumbHome'), href: `/${currentLang}` },
+          {
+            label: location.pathname.endsWith('/privacy') ? 'Privacy Policy' : 'Support',
+            href: location.pathname,
+            current: true,
+          },
+        ]
+      : [{ label: t('breadcrumbHome'), href: `/${currentLang}`, current: true }];
+
   return (
     <LayoutProvider mode="full">
       <div className="min-h-screen flex flex-col bg-dark-bg">
@@ -145,27 +170,21 @@ function Layout() {
               appName: CONSTANTS.APP_NAME,
               onClick: () => navigate(`/${currentLang}`),
             }}
-            menuItems={[]}
+            menuItems={[{ id: 'docs', label: t('nav.docs'), href: `/${currentLang}/docs` }]}
             languages={languages}
             currentLanguage={currentLang}
             onLanguageChange={(newLang: string) => {
-              if (isSupported(newLang)) navigate(`/${newLang}`);
+              if (isSupported(newLang)) {
+                const suffix = location.pathname.startsWith(`/${currentLang}/`)
+                  ? location.pathname.slice(`/${currentLang}`.length)
+                  : '';
+                navigate(`/${newLang}${suffix}`);
+              }
             }}
             LinkComponent={LinkWrapper}
           />
           <AppBreadcrumbs
-            items={
-              location.pathname.endsWith('/privacy') || location.pathname.endsWith('/support')
-                ? [
-                    { label: t('breadcrumbHome'), href: `/${currentLang}` },
-                    {
-                      label: location.pathname.endsWith('/privacy') ? 'Privacy Policy' : 'Support',
-                      href: location.pathname,
-                      current: true,
-                    },
-                  ]
-                : [{ label: t('breadcrumbHome'), href: `/${currentLang}`, current: true }]
-            }
+            items={breadcrumbItems}
             shareConfig={{
               title: `${CONSTANTS.APP_NAME} — ${t('hero.title')}`,
               description: t('footer.description'),
@@ -235,6 +254,8 @@ function AppRoutes() {
           <Route index element={<LandingPage />} />
           <Route path="privacy" element={<PrivacyPolicyPage />} />
           <Route path="support" element={<SupportPage />} />
+          <Route path="docs" element={<DocsPage />} />
+          <Route path="docs/:topic" element={<DocsPage />} />
         </Route>
         <Route path="/privacy" element={<Layout />}>
           <Route index element={<PrivacyPolicyPage />} />

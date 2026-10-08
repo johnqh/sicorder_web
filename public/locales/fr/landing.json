@@ -126,5 +126,8 @@
     "description": "sicorder enregistre uniquement la partie d'une page web que vous sélectionnez, sous forme de MP4.",
     "chromeWebStore": "Chrome Web Store"
   },
-  "breadcrumbHome": "Accueil"
+  "breadcrumbHome": "Accueil",
+  "nav": {
+    "docs": "Documentation"
+  }
 }

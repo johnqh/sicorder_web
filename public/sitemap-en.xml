@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://sicorder.sudobility.com/en</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sicorder.sudobility.com/en" />
@@ -23,5 +23,27 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://sicorder.sudobility.com/uk" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://sicorder.sudobility.com/vi" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sicorder.sudobility.com/en" />
+  </url>
+  <url>
+    <loc>https://sicorder.sudobility.com/en/docs</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sicorder.sudobility.com/en/docs" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sicorder.sudobility.com/zh/docs" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sicorder.sudobility.com/zh-hant/docs" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sicorder.sudobility.com/ja/docs" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sicorder.sudobility.com/ko/docs" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sicorder.sudobility.com/es/docs" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sicorder.sudobility.com/fr/docs" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sicorder.sudobility.com/de/docs" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sicorder.sudobility.com/it/docs" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sicorder.sudobility.com/pt/docs" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sicorder.sudobility.com/ru/docs" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sicorder.sudobility.com/sv/docs" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://sicorder.sudobility.com/th/docs" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sicorder.sudobility.com/uk/docs" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://sicorder.sudobility.com/vi/docs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sicorder.sudobility.com/en/docs" />
   </url>
 </urlset>

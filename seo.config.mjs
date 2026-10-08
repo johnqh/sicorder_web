@@ -45,5 +45,17 @@ export default {
         keywords: locale.landing.seo.keywords,
       }),
     },
+    {
+      key: 'docs',
+      path: '/docs',
+      namespace: 'landing',
+      priority: '0.7',
+      changefreq: 'monthly',
+      indexable: true,
+      meta: locale => ({
+        title: `${locale.landing.nav.docs} | ${APP_NAME}`,
+        description: locale.landing.hero.subtitle,
+      }),
+    },
   ],
 };
