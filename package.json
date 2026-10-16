@@ -4,6 +4,7 @@
   "version": "0.0.4",
   "type": "module",
   "scripts": {
+    "generate:cf-env": "curl -sL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/generate-cloudflare-env.ts -o /tmp/generate-cloudflare-env.ts && bunx tsx /tmp/generate-cloudflare-env.ts",
     "process:static": "mkdir -p node_modules/.cache/workflows && curl -fsSL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/process-static-files.ts -o node_modules/.cache/workflows/process-static-files.ts && bunx tsx node_modules/.cache/workflows/process-static-files.ts",
     "dev": "bun run process:static && vite",
     "seo:fetch": "mkdir -p node_modules/.cache/workflows && curl -fsSL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/generate-seo-assets-v2.mjs -o node_modules/.cache/workflows/generate-seo-assets.mjs",
@@ -12,7 +13,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "brand": "bun scripts/make-brand-assets.ts",
-    "localize": "SCRIPT=$(mktemp) && curl -fsSL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/localize_batch.cjs -o $SCRIPT && node $SCRIPT ./public/locales https://api.whisperly.dev/api/v1/translate/jie9cytr/starter --word-limit 40 && rm -f $SCRIPT && prettier public/locales --write",
+    "localize": "SCRIPT=$(mktemp) && curl -fsSL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/localize_batch.cjs -o $SCRIPT && WHISPERLY_API_KEY=$(grep -h '^WHISPERLY_API_KEY=' ~/.keys ~/.keys.txt 2>/dev/null | head -1 | cut -d= -f2-) node $SCRIPT ./public/locales https://api.whisperly.dev/api/v1/translate/jie9cytr/starter --word-limit 40 && rm -f $SCRIPT && prettier public/locales --write",
     "localized": "node scripts/localization_verify.cjs",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\""
   },
