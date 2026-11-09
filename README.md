@@ -1,8 +1,16 @@
 # sicorder_web
 
-Landing page for sicorder, a Chrome extension that records just the part of a web page you pick, as an MP4.
+Marketing site for sicorder, a Chrome extension that records just the part of a web page you pick, as an MP4. A single-page-app landing page plus docs, privacy-policy and support pages, in 15 locales, built on the Sudobility shell (`@sudobility/*`) with React 19 + Vite + Tailwind. Deployed to Cloudflare Pages.
 
 ## Setup
+
+The `@sudobility/*` dependencies are published to GitHub Packages, so `bun install` needs a GitHub token with `read:packages` in your global `~/.npmrc`:
+
+```
+//npm.pkg.github.com/:_authToken=<github-token>
+```
+
+(The repo's `.npmrc` already points the `@sudobility` scope at `npm.pkg.github.com`.) Then:
 
 ```bash
 cp .env.example .env
@@ -22,7 +30,8 @@ Environment variables (`.env`, or Cloudflare Pages settings):
 ## Development
 
 ```bash
-bun run build
+bun run build       # process:static + SEO assets + tsc -b + vite build → dist/
+bun run typecheck   # tsc --noEmit
 bun run lint
 bun run localize    # translate new English strings into the other 14 locales
 bun run localized   # verify every locale has every key

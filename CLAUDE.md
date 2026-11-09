@@ -1,23 +1,25 @@
 # CLAUDE.md — sicorder_web
 
-Landing page for the sicorder Chrome extension (`~/projects/sicorder_extension`). One page, 15 locales, built on the sudobility shell. Deployed to Cloudflare Pages at sicorder.sudobility.com. Audience: web developers and marketers who today record the whole screen and crop/trim by hand.
+Marketing site for the sicorder Chrome extension (`~/projects/sicorder_extension`). SPA: a landing page plus `/docs` (+ `/docs/:topic`), `/privacy` and `/support` pages, all under `/:lang`, 15 locales, built on the sudobility shell. Deployed to Cloudflare Pages at sicorder.sudobility.com. Audience: web developers and marketers who today record the whole screen and crop/trim by hand.
 
 ## Tech Stack
 
-- Bun, React 19, Vite 6, TypeScript (strict), Tailwind 3 + `@sudobility/design` preset
+- Bun, React 19, Vite 7, TypeScript 6 (strict), Tailwind 3 + `@sudobility/design` preset
 - `@sudobility/building_blocks` (SudobilityApp, AppTopBar, AppBreadcrumbs, AppFooterForHomePage), `@sudobility/components`, `@sudobility/seo_lib`, `@sudobility/di`
 - i18next + http backend, `/:lang` routing
 
 ## Project Structure
 
 ```
-src/App.tsx              shell, routes, footer links, SEO head
+src/App.tsx              shell, routes (Layout + landing/docs/privacy/support), footer links, SEO head
 src/i18n.ts              supportedLanguages (canonical list of 15)
-src/components/          Hero, ProblemSection, HowItWorks, Features, Audiences, PrivacySection, ContactSection, StepCard, FeatureCard
+src/components/          landing sections: Hero, ProblemSection, HowItWorks, Features, Audiences, PrivacySection, ContactSection, StepCard, FeatureCard
+                         standalone pages: DocsPage (DOC_TOPICS), PrivacyPolicyPage, SupportPage
 src/config/              constants (VITE_* env), seo, initialize (Firebase only when configured), analytics
 src/stubs/               no-op modules for building_blocks' optional peers (aliased in vite.config.ts)
+functions/_middleware.js Cloudflare Pages Function: SEO snapshot injection via @sudobility/seo_lib/middleware
 public/locales/{lang}/   landing.json, howto.json (en is the source)
-scripts/                 make-brand-assets.ts, localization_verify.cjs
+scripts/                 make-brand-assets.ts, localization_verify.cjs, prerender.mjs, push_all.sh
 index.template.html      → index.html via process:static
 seo.config.mjs           route config for the SEO generator
 ```
@@ -26,7 +28,8 @@ seo.config.mjs           route config for the SEO generator
 
 ```bash
 bun run dev          # process:static + vite on :4010
-bun run build        # process:static, SEO assets (public + dist), tsc -b, vite build
+bun run build        # process:static, SEO assets (public + dist), tsc -b, vite build → dist/
+bun run typecheck    # tsc --noEmit
 bun run lint
 bun run localize     # translate missing strings via Whisperly (network; needs WHISPERLY_API_KEY), then prettier
 bun run localized    # fail if any locale misses a key from en
@@ -46,6 +49,7 @@ No test framework: verify with build, lint, localized, and screenshots at 1440 a
 
 ## Gotchas
 
+- **Install auth:** `@sudobility/*` packages come from GitHub Packages (`.npmrc` scopes `@sudobility` → `npm.pkg.github.com`). `bun install` fails without a GitHub token with `read:packages` in `~/.npmrc` (`//npm.pkg.github.com/:_authToken=...`).
 - **Stubs:** building_blocks imports optional packages this site doesn't install. If a build fails with "export not found" from a stubbed package, add the export to `src/stubs/`.
 - **Shared scripts:** `process:static`, `seo:fetch` and `localize` download scripts from `johnqh/workflows` `main` at run time and execute them. The build needs network access, and a change on that branch changes this build. Downloads use `curl -f` into `node_modules/.cache/workflows/` so a failed fetch stops the build.
 - **The SEO generator needs every locale file** (it reads `public/locales/<lang>/landing.json` for all 15), so `bun run build` fails until localization has run.
